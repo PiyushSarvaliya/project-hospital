@@ -1,73 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                    },
-                    container: {
-                        center: true,
-                    },
 
-                },
-                fontFamily: {
-                    
-                }
-            }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+          },
+          container: {
+            center: true,
+          },
+
+        },
+        fontFamily: {
+
         }
-    </script>
+      }
+    }
+  </script>
 </head>
+
 <body>
-    <div class="container">
-        <header class="bg-white">
-            <nav class="flex items-center justify-between p-3 lg:px-8" aria-label="Global" >
-              <div class="flex lg:flex-1">
-                <a href="#" class="-m-1 p-1">
-                  <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
-                </a>
-              </div>
-              <div class="flex lg:hidden">
-                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                  <span class="sr-only">Open main menu</span>
-                  <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-                </button>
-              </div>
-              <div class="hidden lg:flex lg:gap-x-12">
-                <div class="relative">
-                  <button type="button" class="flex items-center gap-x-1 text-lg font-semibold text-gray-600" aria-expanded="false">
-                    Home
-                  </button>
-                </div>
-                <a href="#" class="text-lg font-semibold text-gray-600">About Us</a>
-                <a href="#" class="text-lg font-semibold text-gray-600">Services</a>
-                <a href="#" class="text-lg font-semibold text-gray-600">Blog</a>
-                <a href="#" class="text-lg font-semibold text-gray-600">Gallery</a>
-                <a href="#" class="text-lg font-semibold text-gray-600">Video</a>
-                <a href="#" class="text-lg font-semibold text-gray-600">Contact Us</a>
-              </div>
-              <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <button type="button" class="bg-sky-400 py-3 px-5 rounded-md text-white font-semibold">
-                    Book Appoinment
-                </button>
-              </div>
-            </nav>
-            <!-- Mobile menu, show/hide based on menu open state. -->
-            <!-- <div class="lg:hidden" role="dialog" aria-modal="true">
+  <div class="container">
+    <header class="bg-white">
+      <nav class="flex items-center justify-between p-3 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1 p-1">
+            <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <div class="relative">
+            <button type="button" class="flex items-center gap-x-1 text-lg font-semibold text-gray-600"
+              aria-expanded="false">
+              Home
+            </button>
+          </div>
+          <a href="#" class="text-lg font-semibold text-gray-600">About Us</a>
+          <a href="#" class="text-lg font-semibold text-gray-600">Services</a>
+          <a href="#" class="text-lg font-semibold text-gray-600">Blog</a>
+          <a href="#" class="text-lg font-semibold text-gray-600">Gallery</a>
+          <a href="#" class="text-lg font-semibold text-gray-600">Video</a>
+          <a href="#" class="text-lg font-semibold text-gray-600">Contact Us</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <button type="button" class="bg-sky-400 py-3 px-5 rounded-md text-white font-semibold">
+            Book Appoinment
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <!-- <div class="lg:hidden" role="dialog" aria-modal="true">
               <div class="fixed inset-0 z-10"></div>
               <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                 <div class="flex items-center justify-between">
@@ -103,118 +107,112 @@
                 </div>
               </div>
             </div> -->
-        </header>
-    </div>
-      
-    <div class="bg-gradient-to-r from-pink-100 via-green-100 to-blue-100 bg-cover pt-16">
-        <div class="container">
-          <!-- Content Wrapper -->
-          <div class="grid grid-cols-1 md:grid-cols-2">
-            <!-- Left Section -->
-            <div class="mb-0">
-              <p class="text-sm font-medium text-pink-500 ">Complete Health Care</p>
-              <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-                For Women & Babies
-              </h1>
-              <p class="text-gray-600 text-md md:text-lg mb-6">
-                A baby will make love stronger, days shorter, nights longer, bankroll smaller, home happier, clothes shabbier.
-              </p>
-              <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow-md transition">
-                Book Appointment
-              </button>
-              <div class="relative pt-16 pl-12 overflow-hidden">
-                <img src="../imgs/home/Rectangle 4077.png" alt="">
-                <div class="absolute pl-12 top-2 left-3 bottom-1 right-1 pt-16">
-                    <img src="../imgs/home/couple 1.png" alt="">
-                </div>
-              </div>
-            </div>
+    </header>
+  </div>
 
-            <!-- right side -->
-            <div class="relative flex justify-center items-center">
-                <!-- Large Circle -->
-                <div class="w-full h-[500px] md:w-80 md:h-80 rounded-[320px]  border-4 border-white shadow-lg">
-                  <img src="../imgs/home/baby mom.png" alt="Mom and Baby" class="w-full h-[450px] rounded-[320px]">
-                </div>
-        
-                <!-- Small Circles -->
-               
-                <div class="absolute bottom-10 left-60 w-32 h-32 md:w-44 md:h-44 rounded-[250px] overflow-hidden shadow-lg">
-                  <img src="../imgs/home/Group 122.png" alt="Newborn" class="w-full h-full object-cover">
-                </div>
-              </div>
-            
+  <section class="bg-gradient-to-r from-pink-100 via-green-100 to-blue-100 py-12 min-h-screen px-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- Text Content -->
+      <div class="text-center md:text-left">
+        <h2 class="text-pink-500 text-sm font-semibold uppercase mb-2">Complete Health Care</h2>
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">For Women & Babies</h1>
+        <p class="text-gray-600 mb-6">
+          A baby will make love stronger, days shorter, nights longer, bankroll smaller, home happier, clothes shabbier.
+        </p>
+        <a href="#" class="bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition">
+          Book Appointment →
+        </a>
+      </div>
+  
+      <!-- Images Section -->
+      <div class="relative flex justify-center">
+        <div class="relative">
+          <!-- Main Image -->
+          <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg">
+            <img src="https://via.placeholder.com/300" alt="Mother and baby" class="w-full h-full object-cover">
+          </div>
+  
+          <!-- Overlay Small Images -->
+         
+          <div class="absolute bottom-4 left-0 w-20 h-20 rounded-full border-4 border-white overflow-hidden shadow-lg">
+            <img src="https://via.placeholder.com/100" alt="Newborn baby" class="w-full h-full object-cover">
           </div>
         </div>
+        <div class="absolute top-[240px] -left-[350px] w-400 h-[400px] rounded-full border-4 border-white overflow-hidden shadow-lg">
+          <img src="https://via.placeholder.com/100" alt="Pregnant couple" class="w-full h-full object-cover">
+        </div>
+      </div>
     </div>
+  </section>
+  
 
-    <div class="bg-gray-100">
-      <footer class="bg-black text-white py-10">
-          <div class="container px-4">
-              <div class="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start space-y-8 lg:space-y-0">
-                  <!-- Logo and Description -->
-                  <div class="flex flex-col items-center lg:items-start text-center lg:text-left px-24">
-                      <div class="text-2xl font-bold mb-2">Jahaan</div>
-                      <p class="text-sm mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="flex space-x-4">
-                          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
-                          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                      </div>
-                  </div>
-  
-                  <!-- Links -->
-                  <div class="flex flex-col space-y-4">
-                      <h3 class="font-semibold">Pages</h3>
-                      <a href="#" class="text-gray-400 hover:text-white">Home</a>
-                      <a href="#" class="text-gray-400 hover:text-white">About Us</a>
-                      <a href="#" class="text-gray-400 hover:text-white">Services</a>
-                      <a href="#" class="text-gray-400 hover:text-white">Gallery</a>
-                      <a href="#" class="text-gray-400 hover:text-white">Contact Us</a>
-                  </div>
-  
-                  <!-- Support -->
-                  <div class="flex flex-col space-y-4">
-                      <h3 class="font-semibold">Support</h3>
-                      <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-                      <a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a>
-                      <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
-                  </div>
-  
-                  <!-- Contact -->
-                  <div class="flex flex-col space-y-4">
-                      <h3 class="font-semibold">Contact</h3>
-                      <p class="text-sm text-gray-400">
-                          404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
-                          Surat, Gujarat 395009
-                      </p>
-                      <p class="text-sm text-gray-400">+91-999999999</p>
-                      <p class="text-sm text-gray-400">dr.ankur@gmail.com</p>
-                  </div>
-              </div>
-  
-              <!-- Subscription Box -->
-              <div class="mt-10">
-                  <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-                      <h3 class="font-semibold">Subscribe for the exclusive updates!</h3>
-                      <div class="flex space-x-2">
-                          <input
-                              type="email"
-                              placeholder="Enter Your Email Address"
-                              class="px-4 py-2 w-full max-w-md border border-gray-400 rounded-md focus:outline-none"
-                          />
-                          <button class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe Now</button>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Footer Bottom -->
-              <div class="mt-10 text-center text-gray-400 text-sm">
-                  All Rights Reserved | Designed & Developed by Tapit Technology
-              </div>
+
+
+  <div class="bg-gray-100">
+    <footer class="bg-black text-white py-10">
+      <div class="container px-4">
+        <div class="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start space-y-8 lg:space-y-0">
+          <!-- Logo and Description -->
+          <div class="flex flex-col items-center lg:items-start text-center lg:text-left px-24">
+            <div class="text-2xl font-bold mb-2">Jahaan</div>
+            <p class="text-sm mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            </div>
           </div>
-      </footer>
-    </div>
 
-  </body>
+          <!-- Links -->
+          <div class="flex flex-col space-y-4">
+            <h3 class="font-semibold">Pages</h3>
+            <a href="#" class="text-gray-400 hover:text-white">Home</a>
+            <a href="#" class="text-gray-400 hover:text-white">About Us</a>
+            <a href="#" class="text-gray-400 hover:text-white">Services</a>
+            <a href="#" class="text-gray-400 hover:text-white">Gallery</a>
+            <a href="#" class="text-gray-400 hover:text-white">Contact Us</a>
+          </div>
+
+          <!-- Support -->
+          <div class="flex flex-col space-y-4">
+            <h3 class="font-semibold">Support</h3>
+            <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a>
+            <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+          </div>
+
+          <!-- Contact -->
+          <div class="flex flex-col space-y-4">
+            <h3 class="font-semibold">Contact</h3>
+            <p class="text-sm text-gray-400">
+              404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
+              Surat, Gujarat 395009
+            </p>
+            <p class="text-sm text-gray-400">+91-999999999</p>
+            <p class="text-sm text-gray-400">dr.ankur@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- Subscription Box -->
+        <div class="mt-10">
+          <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+            <h3 class="font-semibold">Subscribe for the exclusive updates!</h3>
+            <div class="flex space-x-2">
+              <input type="email" placeholder="Enter Your Email Address"
+                class="px-4 py-2 w-full max-w-md border border-gray-400 rounded-md focus:outline-none" />
+              <button class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-10 text-center text-gray-400 text-sm">
+          All Rights Reserved | Designed & Developed by Tapit Technology
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
 </html>
