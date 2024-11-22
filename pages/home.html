@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     * {
@@ -33,6 +34,7 @@
 </head>
 
 <body>
+  <!-- header  -->
   <div class="container">
     <header class="bg-white">
       <nav class="flex items-center justify-between p-3 lg:px-8" aria-label="Global">
@@ -66,7 +68,7 @@
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <button type="button" class="bg-sky-400 py-3 px-5 rounded-md text-white font-semibold">
-            Book Appoinment
+            Book Appoinment<i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
       </nav>
@@ -110,45 +112,355 @@
     </header>
   </div>
 
-  <section class="bg-gradient-to-r from-pink-100 via-green-100 to-blue-100 py-12 min-h-screen px-6">
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+  <!-- banner section -->
+  <section class="bg-gradient-to-r from-pink-100 via-green-100 to-blue-100 md:h-[740px] py-12  px-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Text Content -->
-      <div class="text-center md:text-left">
-        <h2 class="text-pink-500 text-sm font-semibold uppercase mb-2">Complete Health Care</h2>
-        <h1 class="text-3xl md:text-4xl font-bold mb-4">For Women & Babies</h1>
+      <div class="text-center md:text-left md:mb-0 mb-[20px]">
+        <h2 class="text-pink-500 text-[15px] md:text-sm font-semibold uppercase md:mb-2">Complete Health Care</h2>
+        <h1 class="md:text-3xl md:text-4xl font-bold md:mb-4">For Women & Babies</h1>
         <p class="text-gray-600 mb-6">
           A baby will make love stronger, days shorter, nights longer, bankroll smaller, home happier, clothes shabbier.
         </p>
-        <a href="#" class="bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition">
-          Book Appointment →
+        <a href="#"
+          class="bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition">
+          Book Appointment <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i>
         </a>
       </div>
-  
+
       <!-- Images Section -->
-      <div class="relative flex justify-center">
-        <div class="relative">
+      <div>
+        <div class="relative ml-0 w-[100px]">
           <!-- Main Image -->
-          <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg">
-            <img src="https://via.placeholder.com/300" alt="Mother and baby" class="w-full h-full object-cover">
+          <div
+            class="w-[150px] h-[200px] ml-[160px] md:w-[362px]  md:h-[500px] md:rounded-[320px] rounded-[200px] mb-[150px] overflow-hidden">
+            <img src="../imgs/home/baby mom.png" alt="Mother and baby"
+              class="md:w-[562px] md:h-[500px]  w-[300px] h-[200px] object-cover object-right">
           </div>
-  
           <!-- Overlay Small Images -->
-         
-          <div class="absolute bottom-4 left-0 w-20 h-20 rounded-full border-4 border-white overflow-hidden shadow-lg">
-            <img src="https://via.placeholder.com/100" alt="Newborn baby" class="w-full h-full object-cover">
+          <div
+            class="absolute -bottom-[10px] left-[150px] md:-bottom-[50px] md:w-[190px] md:h-[250px] md:rounded-[250px] border-4 border-white overflow-hidden w-[80px] rounded-[100px] h-[100px]">
+            <img src="../imgs/home/baby.png" alt="Newborn baby" class="md:w-[300px] md:h-[300px] w-[80px] h-[100px]">
           </div>
         </div>
-        <div class="absolute top-[240px] -left-[350px] w-400 h-[400px] rounded-full border-4 border-white overflow-hidden shadow-lg">
-          <img src="https://via.placeholder.com/100" alt="Pregnant couple" class="w-full h-full object-cover">
+        <div class="md:-ml-[620px] -mt-[250px] md:-mt-[308px]  ml-0 md:w-[392px] md:h-[350px] -mb-[48px] w-[120px]">
+          <img src="../imgs/home/couple 1.png" alt="Pregnant couple" class="w-[120px] md:w-[392px] md:h-[350px]">
         </div>
       </div>
     </div>
   </section>
+
+  <!-- about section -->
+  <div>
+    <div class="bg-[url(../imgs/home/section1bg.png)] bg-no-repeat bg-[length:300px_250px] bg-left bg-center">
+      <div class="bg-white opacity-90">
+        <div class="container mx-auto px-4 py-[50px]">
+          <!-- Services Section -->
+          <section>
+            <h2 class="text-xl font-semibold text-red-600">Our Services</h2>
+            <h3 class="text-3xl font-bold mt-2">Explore Our Services</h3>
+            <p class="text-gray-600 mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit magna at dui commodo facilisis.
+            </p>
+            <div class="grid gap-6 mt-8 md:grid-cols-3">
+              <!-- Gynaecology Card -->
+              <div
+                class="bg-white px-16 py-8 rounded-lg shadow-md hover:shadow-lg hover:bg-[#1983BD] hover:transition hover:duration-1000">
+                <div class="bg-[url(../imgs/home/gradiantline.png)] ">
+                  <div class="text-blue-600 text-4xl mb-4">
+                    <!-- Replace with an SVG icon or image -->
+                    <!-- <i class="fas fa-female"></i> -->
+                    <img src="../imgs/home/1.png" alt="" srcset="" class="w-[80px]">
+                  </div>
+                  <h4 class="text-xl font-bold">Gynaecology</h4>
+                  <p class="text-gray-800 mt-2">
+                    Avail the specialized Gynecologist & Obstetrician doctors who are proficient in rendering advanced
+                    treatment.
+                  </p>
+                  <a href="#" class="text-gray-800 font-semibold mt-4 block">Read More <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i> </a>
+                </div>
+              </div>
+              <!-- Cancer Screening Card -->
+              <div
+                class="bg-white px-16 py-8 rounded-lg shadow-md hover:shadow-lg hover:bg-[#1983BD] hover:transition hover:duration-1000">
+                <div class="bg-[url(../imgs/home/gradiantline.png)] ">
+                  <div class="text-blue-600 text-4xl mb-4">
+                    <!-- Replace with an SVG icon or image -->
+                    <!-- <i class="fas fa-female"></i> -->
+                    <img src="../imgs/home/2.png" alt="" srcset="">
+                  </div>
+                  <h4 class="text-xl font-bold">Cancer Screening</h4>
+                  <p class="text-gray-800 mt-2">
+                    Avail the specialized Gynecologist & Obstetrician doctors who are proficient in rendering advanced
+                    treatment.
+                  </p>
+                  <a href="#" class="text-gray-800 font-semibold mt-4 block">Read More <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Infertility Service Card -->
+              <div
+                class="bg-white px-16 py-8 rounded-lg shadow-md hover:shadow-lg hover:bg-[#1983BD] hover:transition hover:duration-1000">
+                <div class="bg-[url(../imgs/home/gradiantline.png)] ">
+                  <div class="text-blue-600 text-4xl mb-4">
+                    <!-- Replace with an SVG icon or image -->
+                    <!-- <i class="fas fa-female"></i> -->
+                    <img src="../imgs/home/3.png" alt="" srcset="">
+                  </div>
+                  <h4 class="text-xl font-bold">Infertility Service</h4>
+                  <p class="text-gray-800 mt-2">
+                    Avail the specialized Gynecologist & Obstetrician doctors who are proficient in rendering advanced
+                    treatment.
+                  </p>
+                  <a href="#" class="text-gray-800 font-semibold mt-4 block">Read More <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6">
+              <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+                View More <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </section>
+
+          <!-- Feminine Coaching Section -->
+          <section class="mt-16 py-8">
+            <div class="grid md:grid-cols-2	">
+              <div>
+                <h2 class="text-xl font-semibold text-red-600">Get to know us</h2>
+                <h3 class="text-4xl font-bold mt-2">
+                  Feminine Coaching For to Women's Empowerment
+                </h3>
+                <p class="text-gray-600 mt-4">
+                  Well located in Adajan Road, Surat, Gujarat, we JAHAAN WOMEN’S HOSPITAL are known to be the best and
+                  most effective
+                  treatment provider.
+                </p>
+                <div class="mt-6">
+                  <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+                    Read More <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="relative md:w-[300px] w-[200px] md:ml-[250px]">
+                <img src="../imgs/home/section1img.png" alt="" srcset="" class="w-full h-full">
+                <div class="absolute mx-auto md:top-[150px] md:left-[90px]">
+                  <img src="../imgs/home/ribbion.png" alt="" srcset="" class="w-[100px]">
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- team section -->
+  <div class="bg-blue-50">
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+          <h2 class="text-xl font-bold text-pink-600">Our Team</h2>
+          <h3 class="text-3xl font-semibold mb-4">Our Specialized Team</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit magna at dui commodo facilisis.</p>
+        </div>
   
+        <!-- Team Cards -->
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 py-[50px]">
+          <!-- Card 1 -->
+          <div class="relative shadow-lg rounded-lg text-center">
+            <img src="../imgs/home/section2-1.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
+            <div class="absolute bg-white py-4 px-3 rounded-[15px] -bottom-[50px] left-[80px]">
+              <h4 class="text-lg font-semibold">Dr. Bhavsar Sathiya</h4>
+              <div class="flex justify-center gap-2 pt-[5]">
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-facebook-f text-white text-lg pt-1"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-instagram text-white text-lg p-[2px]"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-linkedin-in text-white text-lg p-[2px]"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-twitter text-white text-lg p-[2px]"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="relative shadow-lg rounded-lg text-center">
+            <img src="../imgs/home/section2-2.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
+            <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
+              <h4 class="text-lg font-semibold">Dr.Makenna Dias</h4>
+              <div class="flex justify-center gap-2 pt-[5]">
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-facebook-f text-white text-lg pt-1"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-instagram text-white text-lg p-[2px]"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-linkedin-in text-white text-lg p-[2px]"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-twitter text-white text-lg p-[2px]"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="relative shadow-lg rounded-lg text-center">
+            <img src="../imgs/home/section2-3.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
+            <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
+              <h4 class="text-lg font-semibold">DR. Laura Dixon</h4>
+              <div class="flex justify-center gap-2 pt-[5]">
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-facebook-f text-white text-lg pt-1"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-instagram text-white text-lg p-[2px]"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-linkedin-in text-white text-lg p-[2px]"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-twitter text-white text-lg p-[2px]"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="relative shadow-lg rounded-lg text-center">
+            <img src="../imgs/home/section2-4.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
+            <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
+              <h4 class="text-lg font-semibold">Dr.Makenna Dias</h4>
+              <div class="flex justify-center gap-2 pt-[5]">
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-facebook-f text-white text-lg pt-1"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-instagram text-white text-lg p-[2px]"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-linkedin-in text-white text-lg p-[2px]"></i></a>
+                </div>
+                <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
+                  <a href=""><i class="fa-brands fa-twitter text-white text-lg p-[2px]"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
+  <!-- gallery section  -->
+  <div class="bg-gray-50">
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-8">
+          <h2 class="text-xl font-bold text-pink-600">Our Gallery</h2>
+          <h3 class="text-3xl font-semibold mb-4">Health and Wellness</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit magna at dui commodo facilisis.</p>
+        </div>
+  
+        <!-- Gallery Grid -->
+        <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <!-- Image 1 -->
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:h-[350px] md:ml-[25px]">
+            <img src="../imgs/home/gallery1.png" alt="Gallery Image 1" class="md:w-[300px] md:h-full object-cover">
+          </div>
+          <!-- Image 2 -->
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[390px]  md:mr-[35px]">
+            <img src="../imgs/home/gallery2.png" alt="Gallery Image 1" class="md:w-[390px] h-full object-cover">
+          </div>
+          <!-- Image 3 -->
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:ml-[35px]">
+            <img src="../imgs/home/gallery3.png" alt="Gallery Image 1" class="md:w-[350px] h-full object-cover">
+          </div>
+          <!-- Image 4 -->
+          <div class="rounded-lg overflow-hidden shadow-md">
+            <img src="../imgs/home/gallery4.png" alt="Gallery Image 1" class="w-full h-full object-cover">
+          </div>
+          <!-- Image 5 -->
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[400px] md:h-[350px]">
+            <img src="../imgs/home/gallery5.png" alt="Gallery Image 1" class="w-full h-[350px] object-cover object-top">
+          </div>  
+          <!-- Image 6 -->
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:h-[350px] md:ml-[45px]">
+            <img src="../imgs/home/gallery6.png" alt="Gallery Image 1" class="w-full h-full object-cover">
+          </div>
+          <!-- Image 7 -->
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[400px] md:h-[350px]">
+            <img src="../imgs/home/gallery7.png" alt="Gallery Image 1" class="w-full h-full object-cover">
+          </div>
+          <!-- Image 8 -->
+          <div class="rounded-lg overflow-hidden shadow-md md:h-[350px] md:w-[300px] md:ml-[45px]">
+            <img src="../imgs/home/gallery8.png" alt="Gallery Image 1" class="w-full h-full object-cover">
+          </div>
+        </div>
+  
+        <!-- View More Button -->
+        <div class="text-center mt-8">
+          <a href="#" class="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition">View More <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
 
+  <!-- health section  -->
+   <div class="bg-[url(../imgs/home/healthbgimage.png)] bg-no-repeat bg-cover">
+    <div class="bg-[#64A8CECC] opacity-80">
+      <section class="py-12  relative ">
+        <div class="container mx-auto px-4 text-center">
+          <!-- Section Header -->
+          <h2 class="text-xl font-bold text-pink-600">Our Videos</h2>
+          <h3 class="text-3xl font-semibold mb-4">Your Best Partner In Health Care</h3>
+          
+          <!-- Video and Supporting Images -->
+          <div class="relative grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center">
+            
+            <div class="flex flex-col gap-4 gap-y-[150px]">
+              <div class="hidden md:block">
+                <img src="../imgs/home/healyh1.png" alt="" class="md:h-[250px] w-[250px] rounded-lg shadow-lg object-cover object-top">
+              </div>
+              <div class="hidden md:block">
+                <img src="../imgs/home/healyh1.png" alt="" class="md:h-[250px] w-[250px] rounded-lg shadow-lg object-cover object-top">
+              </div>
+            </div>
+    
+            <div class="flex flex-col mt-[150px]">
+              <div class="relative rounded-lg overflow-hidden shadow-lg bg-white">
+                <img src="../imgs/home/videoimg.png" alt="Main Video" class="w-full h-full object-cover">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <button class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 transition">
+                    <a href=""><img src="../imgs/home/playbutton.png" alt=""></a>
+                  </button>
+                </div>
+              </div>
+              <div class="mt-[150px]">
+                <a href="#" class="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition">
+                  View More<i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+              </div>
+            </div>
 
-  <div class="bg-gray-100">
+          <div class="ml-[250px] flex flex-col gap-4 gap-y-[150px]">
+            <div class="hidden md:block">
+              <img src="../imgs/home/healyh1.png" alt="" class="md:h-[250px] w-[250px] rounded-lg shadow-lg object-cover object-top">
+            </div>
+            <div class="hidden md:block">
+              <img src="../imgs/home/healyh1.png" alt="" class="md:h-[250px] w-[250px] rounded-lg shadow-lg object-cover object-top">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+   </div>
+
+   <div class="bg-gray-100">
     <footer class="bg-black text-white py-10">
       <div class="container px-4">
         <div class="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start space-y-8 lg:space-y-0">
@@ -213,6 +525,7 @@
     </footer>
   </div>
 
+  
 </body>
 
 </html>
