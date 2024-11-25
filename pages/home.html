@@ -113,7 +113,8 @@
   </div>
 
   <!-- banner section -->
-  <section class="bg-gradient-to-r from-pink-100 via-green-100 to-blue-100 md:h-[740px] py-12  px-6">
+  <section class="bg-gradient-to-r from-pink-100 via-green-100 to-blue-100 md:h-[740px] py-12  px-6 relative">
+    <div class="absolute right-0 md:top-[250px] top-[250px]"><img src="../imgs/home/headerfoot.png" alt="" srcset="" class="md:w-full w-[80px]"></div>
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Text Content -->
       <div class="text-center md:text-left md:mb-0 mb-[20px]">
@@ -152,8 +153,9 @@
 
   <!-- about section -->
   <div>
-    <div class="bg-[url(../imgs/home/section1bg.png)] bg-no-repeat bg-[length:300px_250px] bg-left bg-center">
-      <div class="bg-white opacity-90">
+    <div class="md:bg-[url(../imgs/home/section1bg.png)] bg-no-repeat bg-[length:300px_250px] bg-left bg-center">
+      <div class="bg-white opacity-90 relative">
+        <div class="absolute hidden md:block bottom-[50px] left-[750px] opacity-10"><img src="../imgs/home/section1foot.png" alt="" srcset="" class="w-[100px]"></div>
         <div class="container mx-auto px-4 py-[50px]">
           <!-- Services Section -->
           <section>
@@ -244,10 +246,10 @@
                   </button>
                 </div>
               </div>
-              <div class="relative md:w-[300px] w-[200px] md:ml-[250px]">
+              <div class="relative md:w-[300px] w-[200px] md:ml-[250px] ml-[80px] md:mt-[0px] mt-[25px]">
                 <img src="../imgs/home/section1img.png" alt="" srcset="" class="w-full h-full">
-                <div class="absolute mx-auto md:top-[150px] md:left-[90px]">
-                  <img src="../imgs/home/ribbion.png" alt="" srcset="" class="w-[100px]">
+                <div class="absolute mx-auto md:top-[150px] md:left-[90px] top-[95px] left-[65px]">
+                  <img src="../imgs/home/ribbion.png" alt="" srcset="" class="md:w-[100px] w-[70px]">
                 </div>
               </div>
             </div>
@@ -258,8 +260,12 @@
   </div>
 
   <!-- team section -->
-  <div class="bg-blue-50">
-    <section class="py-12">
+  <div class="bg-blue-50 relative md:px-[100px]">
+    <div class="absolute top-[50px] left-[15px] md:block hidden"><img src="../imgs/home/teamsectionfoot.png" alt="" srcset="" class="w-[60px]"></div>
+    <div class="absolute right-[45px] top-[240px] md:block hidden"><img src="../imgs/home/teamtop.png" alt="" srcset="" 
+     class="w-[60px]" ></div>
+    <div class="absolute right-[10px] bottom-[70px] md:block hidden"><img src="../imgs/home/teambottom.png" alt="" srcset="" class="w-[60px]"></div>
+    <section class="py-12 md:pb-[70px]">
       <div class="container mx-auto px-4">
         <div class="text-center mb-8">
           <h2 class="text-xl font-bold text-pink-600">Our Team</h2>
@@ -292,7 +298,7 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="relative shadow-lg rounded-lg text-center">
+          <div class="relative shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
             <img src="../imgs/home/section2-2.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
             <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
               <h4 class="text-lg font-semibold">Dr.Makenna Dias</h4>
@@ -313,7 +319,7 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="relative shadow-lg rounded-lg text-center">
+          <div class="relative shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
             <img src="../imgs/home/section2-3.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
             <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
               <h4 class="text-lg font-semibold">DR. Laura Dixon</h4>
@@ -334,7 +340,7 @@
             </div>
           </div>
           <!-- Card 4 -->
-          <div class="relative shadow-lg rounded-lg text-center">
+          <div class="relative shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
             <img src="../imgs/home/section2-4.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
             <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
               <h4 class="text-lg font-semibold">Dr.Makenna Dias</h4>
@@ -360,9 +366,11 @@
   </div>
 
   <!-- gallery section  -->
-  <div class="bg-gray-50">
-    <section class="py-12">
-      <div class="container mx-auto px-4">
+  <div class="bg-gray-50 relative">
+    <div class="absolute top-[190px] left-[20px] md:block hidden"><img src="../imgs/home/gallerytop.png" alt="" srcset="" class="w-[140px]"></div>
+    <div class="absolute bottom-[170px] right-[5px] md:block hidden"><img src="../imgs/home/gallerybottom.png" alt="" srcset="" class="w-[125px]"></div>
+    <section class="py-12 ">
+      <div class="container mx-auto px-[20px] md:px-[70px]">
         <!-- Section Header -->
         <div class="text-center mb-8">
           <h2 class="text-xl font-bold text-pink-600">Our Gallery</h2>
@@ -378,11 +386,11 @@
             <img src="../imgs/home/gallery1.png" alt="Gallery Image 1" class="md:w-[300px] md:h-full object-cover">
           </div>
           <!-- Image 2 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[390px]  md:mr-[35px]">
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[370px]  md:mr-[35px]">
             <img src="../imgs/home/gallery2.png" alt="Gallery Image 1" class="md:w-[390px] h-full object-cover">
           </div>
           <!-- Image 3 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:ml-[35px]">
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[280px] md:ml-[35px]">
             <img src="../imgs/home/gallery3.png" alt="Gallery Image 1" class="md:w-[350px] h-full object-cover">
           </div>
           <!-- Image 4 -->
@@ -390,15 +398,15 @@
             <img src="../imgs/home/gallery4.png" alt="Gallery Image 1" class="w-full h-full object-cover">
           </div>
           <!-- Image 5 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[400px] md:h-[350px]">
+          <div class="rounded-lg overflow-hidden md:ml-[20px] shadow-md md:w-[360px] md:h-[350px]">
             <img src="../imgs/home/gallery5.png" alt="Gallery Image 1" class="w-full h-[350px] object-cover object-top">
           </div>
           <!-- Image 6 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:h-[350px] md:ml-[45px]">
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:h-[350px] md:ml-[55px]">
             <img src="../imgs/home/gallery6.png" alt="Gallery Image 1" class="w-full h-full object-cover">
           </div>
           <!-- Image 7 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[400px] md:h-[350px]">
+          <div class="rounded-lg overflow-hidden md:ml-[25px] shadow-md md:w-[350px] md:h-[350px]">
             <img src="../imgs/home/gallery7.png" alt="Gallery Image 1" class="w-full h-full object-cover">
           </div>
           <!-- Image 8 -->
@@ -418,29 +426,31 @@
 
   <!-- health section  -->
   <div class="bg-[url(../imgs/home/healthbgimage.png)] bg-no-repeat bg-cover">
-    <div class="bg-[#64A8CECC] opacity-80">
-      <section class="py-12  relative ">
+    <div class="bg-[#64A8CECC] opacity-80 md:px-[180px] md:relative">
+      <div class="md:absolute md:left-[0px] md:top-[120px] md:block hidden"><img src="../imgs/home/videotop.png" alt="" srcset=""></div>
+      <div class="md:absolute md:right-[20px] md:bottom-[150px] md:block hidden"><img src="../imgs/home/videobottom.png" alt="" srcset=""></div>
+      <section class="py-12">
         <div class="container mx-auto px-4 text-center">
           <!-- Section Header -->
-          <h2 class="text-xl font-bold text-pink-600">Our Videos</h2>
-          <h3 class="text-3xl font-semibold mb-4">Your Best Partner In Health Care</h3>
+          <h2 class="md:text-xl font-bold  text-[25px] text-pink-600">Our Videos</h2>
+          <h3 class="md:text-3xl  font-semibold mb-4">Your Best Partner In Health Care</h3>
 
           <!-- Video and Supporting Images -->
-          <div class="relative grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center">
+          <div class=" grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center">
 
             <div class="flex flex-col gap-4 gap-y-[150px]">
               <div class="hidden md:block">
                 <img src="../imgs/home/healyh1.png" alt=""
-                  class="md:h-[250px] w-[250px] rounded-lg shadow-lg object-cover object-top">
+                  class="md:h-[340px] md:w-[340px] rounded-lg shadow-lg object-cover object-top">
               </div>
               <div class="hidden md:block">
-                <img src="../imgs/home/healyh1.png" alt=""
-                  class="md:h-[250px] w-[250px] rounded-lg shadow-lg object-cover object-top">
+                <img src="../imgs/home/health2.png" alt=""
+                  class="md:h-[340px] md:w-[300px] rounded-lg shadow-lg object-cover object-center">
               </div>
             </div>
 
-            <div class="flex flex-col mt-[150px]">
-              <div class="relative rounded-lg overflow-hidden shadow-lg bg-white">
+            <div class="flex flex-col md:mt-[100px] ">
+              <div class=" rounded-lg overflow-hidden shadow-lg bg-white relative">
                 <img src="../imgs/home/videoimg.png" alt="Main Video" class="w-full h-full object-cover">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <button
@@ -449,22 +459,22 @@
                   </button>
                 </div>
               </div>
-              <div class="mt-[150px]">
-                <a href="#" class="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition">
-                  View More<i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
+              <div class="md:mt-[150px] mt-[50px]">
+                <a href="#" class="bg-blue-500 md:text-[25px] text-[16px] text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition">
+                  View More<i class="fa-solid fa-chevron-right md:text-xs ml-[10px]"></i><i
                     class="fa-solid fa-chevron-right text-xs"></i>
                 </a>
               </div>
             </div>
 
-            <div class="ml-[250px] flex flex-col gap-4 gap-y-[150px]">
+            <div class="ml-[80px] flex flex-col gap-4 gap-y-[120px]">
               <div class="hidden md:block">
-                <img src="../imgs/home/healyh1.png" alt=""
-                  class="md:h-[250px] w-[250px] rounded-lg shadow-lg object-cover object-top">
+                <img src="../imgs/home/health3.png" alt=""
+                  class="md:h-[280px] w-[340px] rounded-lg shadow-lg object-cover object-top">
               </div>
-              <div class="hidden md:block">
-                <img src="../imgs/home/healyh1.png" alt=""
-                  class="md:h-[250px] w-[250px] rounded-lg shadow-lg object-cover object-top">
+              <div class="hidden md:block ml-[50px]">
+                <img src="../imgs/home/health4.png" alt=""
+                  class="md:h-[230px] w-[280px] rounded-lg shadow-lg object-cover object-center">
               </div>
             </div>
           </div>
@@ -472,6 +482,7 @@
     </div>
   </div>
 
+  <!-- blog section  -->
   <div>
     <section class="py-[10px] pt-[20px]  bg-white">
       <div class="container mx-auto px-4">
@@ -577,7 +588,9 @@
     </section>
   </div>
 
-  <div class="py-[10px] px-4">
+  <!-- testimonial section  -->
+  <div class="py-[10px] px-4 relative">
+    <div class="absolute left-[0px] top-[230px]"><img src="../imgs/home/c-top.png" alt="" srcset="" class="w-[130px]"></div>
     <section class="py-[100px] ">
       <div class="container mx-auto px-4 ">
         <!-- Section Header -->
@@ -643,15 +656,27 @@
 
   </div>
 
-
+  <!-- footer  -->
   <div>
-    <footer class="bg-[#1F1F1F] text-white py-8 mt-[150px]">
+    <footer class="bg-[#1F1F1F] text-white py-8 md:mt-[150px] relative">
+       <!-- Subscription Box -->
+       <div class="md:block hidden bg-white px-4 py-4 rounded-[10px] md:w-[900px] w-[100px] absolute md:-top-[50px] md:left-[360px]">
+        <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+          <h3 class="font-semibold text-2xl text-black">Subscribe for the exclusive updates!</h3>
+          <div class="flex space-x-2">
+            <input type="email" placeholder="Enter Your Email Address"
+              class="px-4 py-2 w-full max-w-md border border-gray-400 rounded-md focus:outline-none" />
+            <button class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+
       <div class="container px-4 py-12">
-        <div class="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start space-y-8 lg:space-y-0">
+        <div class="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start space-y-4 lg:space-y-0">
           <!-- Logo and Description -->  
-          <div class="flex flex-col items-center lg:items-start text-center lg:text-left md:px-[80px]">
+          <div class="flex flex-col items-center lg:items-start text-center lg:text-left md:px-[100px]">
             <div>
-              <img src="../imgs/home/footerlogo.png" alt="" class="md:mt-[50px]">
+              <img src="../imgs/home/footerlogo.png" alt="" class="md:mt-[10px]">
             </div>
             <div class="w-[450px] pt-[10px] pb-[10px]">
               <p class="text-sm mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
@@ -715,18 +740,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Subscription Box -->
-        <!-- <div class="mt-10">
-          <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-            <h3 class="font-semibold">Subscribe for the exclusive updates!</h3>
-            <div class="flex space-x-2">
-              <input type="email" placeholder="Enter Your Email Address"
-                class="px-4 py-2 w-full max-w-md border border-gray-400 rounded-md focus:outline-none" />
-              <button class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe Now</button>
-            </div>
-          </div>
-        </div> -->
 
         <!-- Footer Bottom -->
       </div>
