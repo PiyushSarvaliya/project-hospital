@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+          },
+          container: {
+            center: true,
+          },
+
+        },
+        fontFamily: {
+
+        }
+      }
+    }
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const toggleIconOpen = document.getElementById('menu-icon-open');
+      const toggleIconClose = document.getElementById('menu-icon-close');
+
+      menu.classList.toggle('hidden'); // Toggle visibility
+      menu.classList.toggle('max-h-0'); // For smooth opening/closing
+      menu.classList.toggle('max-h-screen'); // For smooth opening/closing
+      menu.classList.toggle('transition-transform');
+      menu.classList.toggle('duration-1000');
+      // Toggle icons
+      toggleIconOpen.classList.toggle('hidden');
+      toggleIconClose.classList.toggle('hidden');
+    }
+  </script>
+</head>
+
+<body>
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto">
+      <div class=" px-4 py-3 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex lg:flex-1 md:ml-[150px]">
+          <a href="#" class="-m-1 p-1">
+            <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 md:mr-[300px]">
+          <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
+          <a href="#" class="text-gray-700 hover:text-blue-500">About Us</a>
+          <a href="#" class="text-gray-700 hover:text-blue-500">Services</a>
+          <a href="#" class="text-gray-700 hover:text-blue-500">Blog</a>
+          <a href="#" class="text-gray-700 hover:text-blue-500">Gallery</a>
+          <a href="#" class="text-gray-700 hover:text-blue-500">Contact Us</a>
+        </nav>
+
+        <!-- Call to Action Button -->
+        <div class="md:flex hidden">
+          <a href="#" class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Book
+            Appointment</a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
+          <!-- Hamburger Icon -->
+          <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-1000"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+          <!-- Close Icon -->
+          <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu"
+        class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
+        <nav class="space-y-2 py-4 px-4">
+          <a href="#" class="block text-gray-700 hover:text-blue-500">Home</a>
+          <a href="#" class="block text-gray-700 hover:text-blue-500">About Us</a>
+          <a href="#" class="block text-gray-700 hover:text-blue-500">Services</a>
+          <a href="#" class="block text-gray-700 hover:text-blue-500">Blog</a>
+          <a href="#" class="block text-gray-700 hover:text-blue-500">Gallery</a>
+          <a href="#" class="block text-gray-700 hover:text-blue-500">Contact Us</a>
+          <a href="#" class="block bg-blue-500 text-white text-center px-4 py-2 rounded-lg hover:bg-blue-600">Book
+            Appointment</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-[#B2D6E9] relative md:h-[550px]  h-[250px]">
+    <div>
+      <div class="container flex flex-col lg:flex-row items-center lg:items-start px-4 py-8 lg:px-16 lg:py-16 relative">
+        <!-- Left Section: Text -->
+        <div
+          class="md:w-1/2   md:text-center lg:text-left md:mt-[180px] absolute  md:left-[200px] left-[15px] top-[100px]">
+          <h3 class="text-pink-500 text-sm uppercase font-bold">Our Services</h3>
+          <h1 class="md:text-3xl text-[20px] font-bold text-gray-800">Services</h1>
+        </div>
+
+        <!-- Right Section: Image -->
+        <div
+          class="md:w-1/2  flex justify-center mt-8 md:-right-[30px] md:top-[40px] z-10 absolute top-[0px] right-[50px]">
+          <img src="../imgs/blog/banner2.png" alt="" class="md:w-[400px] w-[170px]">
+        </div>
+      </div>
+
+      <div class="absolute md:bottom-[0px] bottom-[0px]"><img src="../imgs/blog/secbannerbottom.png" alt="" srcset=""
+          class="md:w-full w-[100px]"></div>
+      <div class="absolute top-0 left-0"><img src="../imgs/blog/Ellipse 1.png" alt="" srcset=""
+          class="md:w-[450px] w-[100px]"></div>
+      <div class="absolute md:right-[500px] md:-top-[20px] top-[0px] right-[170px]"><img
+          src="../imgs/blog/bannerrighttop.png" alt="" srcset="" class="md:w-full w-[100px]"></div>
+      <div class="absolute md:top-[135px] md:right-[200px] right-0 bg-cover w-[40%] md:w-[20%] overflow-hidden"><img
+          src="../imgs/blog/banner-png.png" alt="" srcset="" class="md:w-[720px] "></div>
+
+    </div>
+  </section>
+
+
+  <section class="md:px-[100px] relative">
+    <div class="absolute left-[2%] bottom-[3%] opacity-10 md:block hidden"><img src="../imgs/home/section1foot.png"
+        alt="" srcset="" class="w-[120px]"></div>
+    <div class="container mx-auto p-4 md:p-[50px] ">
+      <!-- Image Section -->
+      <div>
+        <img src="../imgs/home/blog1.png" alt="Header Image"
+          class="w-[100%] md:h-[800px]  rounded-t-lg  object-cover object-top">
+      </div>
+
+      <!-- Content Section -->
+      <div class="p-5">
+        <!-- Meta Information -->
+        <div class="flex justify-between items-center text-gray-500 text-sm mb-4">
+          <span>📅 Jan 03, 2023</span>
+          <span>👤 Uploaded By: Admin</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+          How to Determine the Length of a Time-Out
+        </h1>
+
+        <!-- Body Text -->
+        <p class="text-gray-600 leading-relaxed mb-4">
+          High blood pressure, also known as hypertension, affects millions worldwide. It is a condition that increases
+          the risk of various health problems such as strokes, heart attacks, and more. While stress is one well-known
+          cause of hypertension, a poor diet, smoking, and lack of exercise, are other factors that can contribute to
+          high blood pressure. Learn the best measures you can implement to stay healthy.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          <strong>Health Tip:</strong> Research shows that people who don't get enough quality sleep are at risk of
+          developing hypertension. This is because sleep regulates the body's stress hormones, which affect blood
+          pressure. If you're not getting enough restful sleep, each night it could be contributing to your high blood
+          pressure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="py-[30px]">
+    <div class="container">
+      <section class="pt-[10px] md:mx-[10px] bg-[#479CCA] text-white rounded-lg px-[30px] md:mt-[50px]">
+        <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
+          <!-- Text Content -->
+          <div class="lg:w-1/2 text-center lg:text-left mb-6 lg:mb-0">
+            <h3 class="md:text-[50px] text-[25px] font-bold mb-4">Still confused about your career choice? consult with
+              our experts</h3>
+            <a href="#"
+              class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition">
+              Get In Touch <i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
+                class="fa-solid fa-chevron-right text-xs"></i>
+            </a>
+          </div>
+          <!-- Image -->
+          <div class=" md:ml-[8px] relative">
+            <img src="../imgs/home/Ellipse 70.png" alt="" class="relative">
+            <div class="absolute md:-top-[20px] md:-left-[100px] top-[16px] -left-[60px]">
+              <img src="../imgs/home/lastsec-img.png" alt="Doctor Consultation" class="md:w-[590px] w-[290px]">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <div>
+    <footer class="bg-[#1F1F1F] text-white py-8 md:mt-[150px] relative">
+      <!-- Subscription Box -->
+      <div
+        class="md:block hidden bg-white px-4 py-4 rounded-[10px] md:w-[900px] w-[100px] absolute md:-top-[50px] md:left-[360px]">
+        <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+          <h3 class="font-semibold text-2xl text-black">Subscribe for the exclusive updates!</h3>
+          <div class="flex space-x-2">
+            <input type="email" placeholder="Enter Your Email Address"
+              class="px-4 py-2 w-full max-w-md text-black border border-gray-400 rounded-md focus:outline-none" />
+            <button class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4 py-12">
+        <div class="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start space-y-4 lg:space-y-0">
+          <!-- Logo and Description -->
+          <div class="flex flex-col items-center lg:items-start text-center lg:text-left md:px-[100px]">
+            <div>
+              <img src="../imgs/home/footerlogo.png" alt="" class="md:mt-[10px]">
+            </div>
+            <div class="md:w-[450px] pt-[10px] pb-[10px]">
+              <p class="text-sm mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the..</p>
+            </div>
+            <div class="flex flex-wrap space-x-4">
+              <div class="w-[30px] h-[30px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              </div>
+              <div class="w-[30px] h-[30px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-instagram py-[7px] px-[8px]"></i></a>
+              </div>
+              <div class="w-[30px] h-[30px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div class="flex flex-col space-y-4 md:px-[40px]">
+            <h3 class="font-semibold">Pages</h3>
+            <a href="#" class="text-gray-400 text-[14px]">Home</a>
+            <a href="#" class="text-gray-400 text-[14px]">About Us</a>
+            <a href="#" class="text-gray-400 text-[14px]">Services</a>
+            <a href="#" class="text-gray-400 text-[14px]">Gallery</a>
+            <a href="#" class="text-gray-400 text-[14px]">Contact Us</a>
+          </div>
+
+          <!-- Support -->
+          <div class="flex flex-col space-y-4 text-center md:text-left md:px-[40px]">
+            <h3 class="font-semibold">Support</h3>
+            <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a>
+            <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+          </div>
+
+          <!-- Contact -->
+          <div class="flex flex-col space-y-4 md:text-left text-center md:px-[40px]">
+            <h3 class="font-semibold">Contact</h3>
+            <div class=" flex flex-wrap">
+              <div class="w-[30px] h-[30px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              </div>
+              <div class="w-[300px] pl-[15px]">
+                <p class="text-sm text-gray-400">
+                  404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
+                  Surat, Gujarat 395009
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-wrap">
+              <div class="w-[30px] h-[30px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              </div>
+              <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">+91-999999999</p>
+            </div>
+            <div class="flex flex-wrap pt-[10px]">
+              <div class="w-[30px] h-[30px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F]"><i class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
+              </div>
+              <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">dr.ankur@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+      </div>
+      <div class="border-t border-t-[1px]">
+        <div class="container">
+          <div class="mt-10 text-center text-gray-400 text-sm">
+            All Rights Reserved | Designed & Developed by Tapit Technology
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

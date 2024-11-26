@@ -29,118 +29,111 @@
         }
       }
     }
+    function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const toggleIconOpen = document.getElementById('menu-icon-open');
+            const toggleIconClose = document.getElementById('menu-icon-close');
+
+            menu.classList.toggle('hidden'); // Toggle visibility
+            menu.classList.toggle('max-h-0'); // For smooth opening/closing
+            menu.classList.toggle('max-h-screen'); // For smooth opening/closing
+            menu.classList.toggle('transition-transform');
+            menu.classList.toggle('duration-1000');
+            // Toggle icons
+            toggleIconOpen.classList.toggle('hidden');
+            toggleIconClose.classList.toggle('hidden');
+        }
   </script>
 </head>
 <body>
-    <div class="container">
-        <header class="bg-white">
-          <nav class="flex items-center justify-between p-3 lg:px-8" aria-label="Global">
-            <div class="flex lg:flex-1">
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto">
+        <div class=" px-4 py-3 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex lg:flex-1 md:ml-[150px]">
               <a href="#" class="-m-1 p-1">
                 <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
               </a>
             </div>
-            <div class="flex lg:hidden">
-              <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                <span class="sr-only">Open main menu</span>
-                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                  aria-hidden="true" data-slot="icon">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6 md:mr-[300px]">
+                <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">About Us</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Services</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Blog</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Gallery</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Contact Us</a>
+            </nav>
+
+            <!-- Call to Action Button -->
+            <div class="md:flex hidden">
+                <a href="#"
+                class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Book
+                Appointment</a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
+                <!-- Hamburger Icon -->
+                <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
-              </button>
-            </div>
-            <div class="hidden lg:flex lg:gap-x-12">
-              <div class="relative">
-                <button type="button" class="flex items-center gap-x-1 text-lg font-semibold text-gray-600"
-                  aria-expanded="false">
-                  Home
-                </button>
-              </div>
-              <a href="#" class="text-lg font-semibold text-gray-600">About Us</a>
-              <a href="#" class="text-lg font-semibold text-gray-600">Services</a>
-              <a href="#" class="text-lg font-semibold text-gray-600">Blog</a>
-              <a href="#" class="text-lg font-semibold text-gray-600">Gallery</a>
-              <a href="#" class="text-lg font-semibold text-gray-600">Video</a>
-              <a href="#" class="text-lg font-semibold text-gray-600">Contact Us</a>
-            </div>
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-              <button type="button" class="bg-sky-400 py-3 px-5 rounded-md text-white font-semibold">
-                Book Appoinment<i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i>
-              </button>
-            </div>
-          </nav>
-          <!-- Mobile menu, show/hide based on menu open state. -->
-          <!-- <div class="lg:hidden" role="dialog" aria-modal="true">
-                  <div class="fixed inset-0 z-10"></div>
-                  <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                    <div class="flex items-center justify-between">
-                      <a href="#" class="-m-1.5 p-1.5">
-                        <span class="sr-only">Your Company</span>
-                        <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
-                      </a>
-                      <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                        <span class="sr-only">Close menu</span>
-                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="mt-6 flow-root">
-                      <div class="-my-6 divide-y divide-gray-500/10">
-                        <div class="space-y-2 py-6">
-                          <div class="-mx-3">
-                            <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
-                              Product
-                            </button>
-                          </div>
-                          <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
-                          <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
-                          <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
-                        </div>
-                        <div class="py-6">
-                          <button type="button" class="bg-sky-400">
-        
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-        </header>
-    </div>
+                <!-- Close Icon -->
+                <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
 
-    <div class="bg-[#B2D6E9]">
-        <section class="container flex flex-col lg:flex-row items-center lg:items-start px-4 py-8 lg:px-16 lg:py-16">
-            <!-- Left Section: Text -->
-            <div class="lg:w-1/2 text-center lg:text-left">
-              <h3 class="text-pink-500 text-sm uppercase font-bold">Our Services</h3>
-              <h1 class="text-3xl font-bold text-gray-800">Services</h1>
-            </div>
-            
-            <!-- Right Section: Image -->
-            <div class="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
-              <div class="relative w-full max-w-md">
-                <!-- Image background -->
-                <div class="absolute inset-0 bg-blue-200 rounded-lg transform -rotate-3"></div>
-                <!-- Main Image -->
-                <img 
-                  src="https://via.placeholder.com/300" 
-                  alt="Medical professionals" 
-                  class="relative z-10 rounded-lg shadow-lg"
-                >
-                <!-- Overlapping Grid -->
-                <div class="absolute inset-0 grid grid-cols-2 gap-1 z-20">
-                  <div class="bg-white rounded-tr-lg"></div>
-                  <div></div>
-                  <div></div>
-                  <div class="bg-white rounded-bl-lg"></div>
-                </div>
-              </div>
-            </div>
-          </section>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
+            <nav class="space-y-2 py-4 px-4">
+                <a href="#" class="block text-gray-700 hover:text-blue-500">Home</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">About Us</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">Services</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">Blog</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">Gallery</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">Contact Us</a>
+                <a href="#" class="block bg-blue-500 text-white text-center px-4 py-2 rounded-lg hover:bg-blue-600">Book
+                    Appointment</a>
+            </nav>
+        </div>
     </div>
+</header>
 
-    <div class="md:px-[100px] px-[25px] py-[60px] md:py-[100px]">
+    <section class="bg-[#B2D6E9] relative md:h-[550px]  h-[250px]">
+      <div>
+          <div class="container flex flex-col lg:flex-row items-center lg:items-start px-4 py-8 lg:px-16 lg:py-16 relative">
+              <!-- Left Section: Text -->
+              <div class="md:w-1/2   md:text-center lg:text-left md:mt-[180px] absolute  md:left-[200px] left-[15px] top-[100px]">
+                  <h3 class="text-pink-500 text-sm uppercase font-bold">Latest News</h3>
+                  <h1 class="md:text-3xl text-[20px] font-bold text-gray-800">Blog</h1>
+              </div>
+  
+              <!-- Right Section: Image -->
+              <div class="md:w-1/2  flex justify-center mt-8 md:-right-[30px] md:top-[40px] z-10 absolute top-[0px] right-[50px]">
+                  <img src="../imgs/blog/banner2.png" alt="" class="md:w-[400px] w-[170px]">
+              </div>
+          </div>
+          
+          <div class="absolute md:bottom-[0px] bottom-[0px]"><img src="../imgs/blog/secbannerbottom.png" alt="" srcset="" class="md:w-full w-[100px]"></div>
+      <div class="absolute top-0 left-0"><img src="../imgs/blog/Ellipse 1.png" alt="" srcset="" class="md:w-[450px] w-[100px]"></div>
+      <div class="absolute md:right-[500px] md:-top-[20px] top-[0px] right-[170px]"><img src="../imgs/blog/bannerrighttop.png" alt=""
+              srcset="" class="md:w-full w-[100px]"></div>
+      <div class="absolute md:top-[135px] md:right-[200px] right-0 bg-cover w-[40%] md:w-[20%] overflow-hidden"><img src="../imgs/blog/banner-png.png"
+              alt="" srcset="" class="md:w-[720px] "></div>
+
+      </div>
+  </section>
+
+    <div class="md:px-[100px] px-[25px] py-[60px] md:py-[100px] relative">
+      <div class="absolute opacity-10 top-[44%] left-[0%] md:block hidden"><img src="../imgs/home/section1foot.png" alt="" class="w-[150px]"></div>
         <section class="container grid md:grid-cols-3 grid-cols-1 gap-4">
               <!-- Card 1 -->
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
@@ -422,7 +415,7 @@
           <h3 class="font-semibold text-2xl text-black">Subscribe for the exclusive updates!</h3>
           <div class="flex space-x-2">
             <input type="email" placeholder="Enter Your Email Address"
-              class="px-4 py-2 w-full max-w-md border border-gray-400 rounded-md focus:outline-none" />
+              class="px-4 py-2 w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
             <button class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe Now</button>
           </div>
         </div>
@@ -435,7 +428,7 @@
             <div>
               <img src="../imgs/home/footerlogo.png" alt="" class="md:mt-[10px]">
             </div>
-            <div class="w-[450px] pt-[10px] pb-[10px]">
+            <div class="md:w-[450px] pt-[10px] pb-[10px]">
               <p class="text-sm mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
             </div>
             <div class="flex flex-wrap space-x-4">
