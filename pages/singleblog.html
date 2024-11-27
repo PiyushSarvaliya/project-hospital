@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     * {
@@ -47,65 +48,69 @@
   </script>
 </head>
 
-<body>
+<body class="outfit">
   <header class="bg-white shadow-md">
     <div class="container mx-auto">
-      <div class=" px-4 py-3 flex items-center justify-between">
-        <!-- Logo -->
-        <div class="flex lg:flex-1 md:ml-[150px]">
-          <a href="#" class="-m-1 p-1">
-            <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
-          </a>
+        <div class=" px-4 py-3 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex lg:flex-1 md:ml-[150px]">
+                <a href="#" class="-m-1 p-1">
+                    <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6 md:mr-[300px]">
+                <a href="../index.html" class="text-gray-700 hover:text-blue-500">Home</a>
+                <a href="./about.html" class="text-gray-700 hover:text-blue-500">About Us</a>
+                <a href="./sevices.html" class="text-gray-700 hover:text-blue-500">Services</a>
+                <a href="./blog.html" class="text-gray-700 hover:text-blue-500">Blog</a>
+                <a href="./gallery.html" class="text-gray-700 hover:text-blue-500">Gallery</a>
+                <a href="./video.html" class="block text-gray-700 hover:text-blue-500">Videos</a>
+                <a href="./contact.html" class="text-gray-700 hover:text-blue-500">Contact Us</a>
+            </nav>
+
+            <!-- Call to Action Button -->
+            <div class="md:flex hidden">
+                <a href="#"
+                    class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 jost">Book
+                    Appointment</a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
+                <!-- Hamburger Icon -->
+                <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+                <!-- Close Icon -->
+                <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
         </div>
 
-        <!-- Desktop Menu -->
-        <nav class="hidden md:flex space-x-6 md:mr-[300px]">
-          <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
-          <a href="#" class="text-gray-700 hover:text-blue-500">About Us</a>
-          <a href="#" class="text-gray-700 hover:text-blue-500">Services</a>
-          <a href="#" class="text-gray-700 hover:text-blue-500">Blog</a>
-          <a href="#" class="text-gray-700 hover:text-blue-500">Gallery</a>
-          <a href="#" class="text-gray-700 hover:text-blue-500">Contact Us</a>
-        </nav>
-
-        <!-- Call to Action Button -->
-        <div class="md:flex hidden">
-          <a href="#" class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Book
-            Appointment</a>
-        </div>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
-          <!-- Hamburger Icon -->
-          <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-1000"
-            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-          <!-- Close Icon -->
-          <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobile-menu"
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
         class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
-        <nav class="space-y-2 py-4 px-4">
-          <a href="#" class="block text-gray-700 hover:text-blue-500">Home</a>
-          <a href="#" class="block text-gray-700 hover:text-blue-500">About Us</a>
-          <a href="#" class="block text-gray-700 hover:text-blue-500">Services</a>
-          <a href="#" class="block text-gray-700 hover:text-blue-500">Blog</a>
-          <a href="#" class="block text-gray-700 hover:text-blue-500">Gallery</a>
-          <a href="#" class="block text-gray-700 hover:text-blue-500">Contact Us</a>
-          <a href="#" class="block bg-blue-500 text-white text-center px-4 py-2 rounded-lg hover:bg-blue-600">Book
-            Appointment</a>
+        <nav class="space-y-2 py-4 px-4 text-center">
+          <a href="#" class="block text-gray-700 hover:text-blue-500 py-[5px]">Home</a>
+          <a href="./pages/about.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">About Us</a>
+          <a href="./pages/sevices.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Services</a>
+          <a href="./pages/blog.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Blog</a>
+          <a href="./pages/gallery.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Gallery</a>
+          <a href="./pages/contact.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Contact Us</a>
+          <a href="./pages/video.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Videos</a>
         </nav>
       </div>
     </div>
-  </header>
+</header>
 
   <section class="bg-[#B2D6E9] relative md:h-[550px]  h-[250px]">
     <div>
@@ -113,8 +118,8 @@
         <!-- Left Section: Text -->
         <div
           class="md:w-1/2   md:text-center lg:text-left md:mt-[180px] absolute  md:left-[200px] left-[15px] top-[100px]">
-          <h3 class="text-pink-500 text-sm uppercase font-bold">Our Services</h3>
-          <h1 class="md:text-3xl text-[20px] font-bold text-gray-800">Services</h1>
+          <h3 class="text-pink-500 text-sm uppercase font-bold">Latest News</h3>
+          <h1 class="md:text-6xl text-[20px] font-bold text-gray-800 jost">Blog</h1>
         </div>
 
         <!-- Right Section: Image -->
@@ -156,7 +161,7 @@
         </div>
 
         <!-- Title -->
-        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 jost">
           How to Determine the Length of a Time-Out
         </h1>
 
@@ -183,10 +188,10 @@
         <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
           <!-- Text Content -->
           <div class="lg:w-1/2 text-center lg:text-left mb-6 lg:mb-0">
-            <h3 class="md:text-[50px] text-[25px] font-bold mb-4">Still confused about your career choice? consult with
+            <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost">Still confused about your career choice? consult with
               our experts</h3>
             <a href="#"
-              class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition">
+              class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition jost">
               Get In Touch <i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
                 class="fa-solid fa-chevron-right text-xs"></i>
             </a>
@@ -205,16 +210,16 @@
 
   <!-- footer  -->
   <div>
-    <footer class="bg-[#1F1F1F] text-white py-8 md:mt-[150px] relative">
+    <footer class="bg-[#1F1F1F] text-white py-8 mt-[80px] md:mt-[150px] relative">
       <!-- Subscription Box -->
       <div
-        class="md:block hidden bg-white px-4 py-4 rounded-[10px] md:w-[900px] w-[100px] absolute md:-top-[50px] md:left-[360px]">
+        class=" bg-white shadow-lg md:px-4 md:py-4  py-2 px-2 rounded-[10px] md:w-[900px] absolute md:-top-[50px] md:left-[360px] -top-[5%] left-[10%]">
         <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-          <h3 class="font-semibold text-2xl text-black">Subscribe for the exclusive updates!</h3>
+          <h3 class="font-semibold md:text-2xl text-xl text-black jost">Subscribe for the exclusive updates!</h3>
           <div class="flex space-x-2">
             <input type="email" placeholder="Enter Your Email Address"
-              class="px-4 py-2 w-full max-w-md text-black border border-gray-400 rounded-md focus:outline-none" />
-            <button class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe Now</button>
+              class="px-4 py-2 md:w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
+            <button class="md:px-6 md:py-2 bg-blue-500  text-white rounded-md hover:bg-blue-600 jost">Subscribe Now</button>
           </div>
         </div>
       </div>

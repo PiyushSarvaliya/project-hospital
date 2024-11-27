@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         * {
@@ -47,32 +48,33 @@
     </script>
 </head>
 
-<body>
+<body class="outfit">
   <header class="bg-white shadow-md">
     <div class="container mx-auto">
         <div class=" px-4 py-3 flex items-center justify-between">
             <!-- Logo -->
             <div class="flex lg:flex-1 md:ml-[150px]">
-              <a href="#" class="-m-1 p-1">
-                <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
-              </a>
+                <a href="#" class="-m-1 p-1">
+                    <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
+                </a>
             </div>
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex space-x-6 md:mr-[300px]">
-                <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
-                <a href="#" class="text-gray-700 hover:text-blue-500">About Us</a>
-                <a href="#" class="text-gray-700 hover:text-blue-500">Services</a>
-                <a href="#" class="text-gray-700 hover:text-blue-500">Blog</a>
-                <a href="#" class="text-gray-700 hover:text-blue-500">Gallery</a>
+                <a href="../index.html" class="text-gray-700 hover:text-blue-500">Home</a>
+                <a href="./about.html" class="text-gray-700 hover:text-blue-500">About Us</a>
+                <a href="./sevices.html" class="text-gray-700 hover:text-blue-500">Services</a>
+                <a href="./blog.html" class="text-gray-700 hover:text-blue-500">Blog</a>
+                <a href="./gallery.html" class="text-gray-700 hover:text-blue-500">Gallery</a>
+                <a href="./video.html" class="block text-gray-700 hover:text-blue-500">Videos</a>
                 <a href="#" class="text-gray-700 hover:text-blue-500">Contact Us</a>
             </nav>
 
             <!-- Call to Action Button -->
             <div class="md:flex hidden">
                 <a href="#"
-                class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Book
-                Appointment</a>
+                    class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 jost">Book
+                    Appointment</a>
             </div>
 
             <!-- Mobile Menu Toggle Button -->
@@ -81,31 +83,32 @@
                 <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
                     class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
                 <!-- Close Icon -->
                 <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
                     class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
         </div>
 
         <!-- Mobile Menu -->
         <div id="mobile-menu"
-            class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
-            <nav class="space-y-2 py-4 px-4">
-                <a href="#" class="block text-gray-700 hover:text-blue-500">Home</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500">About Us</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500">Services</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500">Blog</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500">Gallery</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500">Contact Us</a>
-                <a href="#" class="block bg-blue-500 text-white text-center px-4 py-2 rounded-lg hover:bg-blue-600">Book
-                    Appointment</a>
-            </nav>
-        </div>
+        class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
+        <nav class="space-y-2 py-4 px-4 text-center">
+          <a href="#" class="block text-gray-700 hover:text-blue-500 py-[5px]">Home</a>
+          <a href="./pages/about.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">About Us</a>
+          <a href="./pages/sevices.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Services</a>
+          <a href="./pages/blog.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Blog</a>
+          <a href="./pages/gallery.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Gallery</a>
+          <a href="./pages/contact.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Contact Us</a>
+          <a href="./pages/video.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Videos</a>
+        </nav>
+      </div>
     </div>
 </header>
 
@@ -114,8 +117,8 @@
           <div class="container flex flex-col lg:flex-row items-center lg:items-start px-4 py-8 lg:px-16 lg:py-16 relative">
               <!-- Left Section: Text -->
               <div class="md:w-1/2   md:text-center lg:text-left md:mt-[180px] absolute  md:left-[200px] left-[15px] top-[100px]">
-                  <h3 class="text-pink-500 text-sm uppercase font-bold">Our Services</h3>
-                  <h1 class="md:text-3xl text-[20px] font-bold text-gray-800">Services</h1>
+                  <h3 class="text-pink-500 text-sm uppercase font-bold">Get In Touch With Us</h3>
+                  <h1 class="md:text-4xl text-[20px] uppercase font-bold text-gray-800 jost">Contact Us</h1>
               </div>
   
               <!-- Right Section: Image -->
@@ -143,7 +146,7 @@
                 <!-- Left Content -->
                 <div class="md:w-3/5 w-full md:mb-[0px] mb-[20px]">
                     <p class="text-pink-500 font-semibold text-lg">Get Support Anytime</p>
-                    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mt-2 py-2">
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mt-2 py-2 jost">
                         We’re Open For Any Women’s Of Queries
                     </h1>
                     <p class="text-gray-600 text-[20px] mt-4">
@@ -186,7 +189,7 @@
                 <!-- Right Form -->
                 <div class="md:px-[35px] md:w-2/5 w-full md:order-2 -order-1">
                     <div class="bg-[#C3DFEE] p-6 rounded-lg shadow-lg">
-                        <h2 class="text-2xl font-bold text-gray-900 mb-4">Get in Touch.</h2>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4 jost">Get in Touch.</h2>
                         <form class="space-y-4">
                             <div>
                                 <label for="first-name" class="block text-sm font-medium text-gray-700">First
@@ -215,7 +218,7 @@
                                     class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500"></textarea>
                             </div>
                             <button type="submit"
-                                class="w-full bg-pink-500 text-white py-2 px-4 rounded-lg shadow hover:bg-pink-600">
+                                class="w-full bg-pink-500 text-white py-2 px-4 rounded-lg shadow hover:bg-pink-600 jost">
                                 Submit
                             </button>
                         </form>
@@ -253,28 +256,30 @@
 
    <!-- footer  -->
    <div>
-    <footer class="bg-[#1F1F1F] text-white py-8 md:mt-[150px] relative">
-       <!-- Subscription Box -->
-       <div class="md:block hidden bg-white px-4 py-4 rounded-[10px] md:w-[900px] w-[100px] absolute md:-top-[50px] md:left-[360px]">
+    <footer class="bg-[#1F1F1F] text-white py-8 mt-[80px] md:mt-[150px] relative">
+      <!-- Subscription Box -->
+      <div
+        class=" bg-white shadow-lg md:px-4 md:py-4  py-2 px-2 rounded-[10px] md:w-[900px] absolute md:-top-[50px] md:left-[360px] -top-[5%] left-[10%]">
         <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-          <h3 class="font-semibold text-2xl text-black">Subscribe for the exclusive updates!</h3>
+          <h3 class="font-semibold md:text-2xl text-xl text-black jost">Subscribe for the exclusive updates!</h3>
           <div class="flex space-x-2">
             <input type="email" placeholder="Enter Your Email Address"
-              class="px-4 py-2 w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
-            <button class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe Now</button>
+              class="px-4 py-2 md:w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
+            <button class="md:px-6 md:py-2 bg-blue-500  text-white rounded-md hover:bg-blue-600 jost">Subscribe Now</button>
           </div>
         </div>
       </div>
 
       <div class="container px-4 py-12">
         <div class="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start space-y-4 lg:space-y-0">
-          <!-- Logo and Description -->  
+          <!-- Logo and Description -->
           <div class="flex flex-col items-center lg:items-start text-center lg:text-left md:px-[100px]">
             <div>
               <img src="../imgs/home/footerlogo.png" alt="" class="md:mt-[10px]">
             </div>
             <div class="md:w-[450px] pt-[10px] pb-[10px]">
-              <p class="text-sm mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+              <p class="text-sm mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the..</p>
             </div>
             <div class="flex flex-wrap space-x-4">
               <div class="w-[30px] h-[30px] rounded-full bg-white">
@@ -310,17 +315,17 @@
           <!-- Contact -->
           <div class="flex flex-col space-y-4 md:text-left text-center md:px-[40px]">
             <h3 class="font-semibold">Contact</h3>
-           <div class=" flex flex-wrap">
-            <div class="w-[30px] h-[30px] rounded-full bg-white ">
-              <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+            <div class=" flex flex-wrap">
+              <div class="w-[30px] h-[30px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              </div>
+              <div class="w-[300px] pl-[15px]">
+                <p class="text-sm text-gray-400">
+                  404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
+                  Surat, Gujarat 395009
+                </p>
+              </div>
             </div>
-            <div class="w-[300px] pl-[15px]">
-               <p class="text-sm text-gray-400">
-                404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
-                Surat, Gujarat 395009
-              </p>
-            </div>
-           </div>
             <div class="flex flex-wrap">
               <div class="w-[30px] h-[30px] rounded-full bg-white ">
                 <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>

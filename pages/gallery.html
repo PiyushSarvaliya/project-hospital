@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         * {
@@ -47,65 +48,67 @@
     </script>
 </head>
 
-<body>
+<body class="outfit">
     <header class="bg-white shadow-md">
         <div class="container mx-auto">
             <div class=" px-4 py-3 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex lg:flex-1 md:ml-[150px]">
-                  <a href="#" class="-m-1 p-1">
-                    <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
-                  </a>
+                    <a href="#" class="-m-1 p-1">
+                        <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
+                    </a>
                 </div>
-    
+
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-6 md:mr-[300px]">
-                    <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-500">About Us</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-500">Services</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-500">Blog</a>
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-500">Home</a>
+                    <a href="./about.html" class="text-gray-700 hover:text-blue-500">About Us</a>
+                    <a href="./sevices.html" class="text-gray-700 hover:text-blue-500">Services</a>
+                    <a href="./blog.html" class="text-gray-700 hover:text-blue-500">Blog</a>
                     <a href="#" class="text-gray-700 hover:text-blue-500">Gallery</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-500">Contact Us</a>
+                    <a href="./video.html" class="block text-gray-700 hover:text-blue-500">Videos</a>
+                    <a href="./contact.html" class="text-gray-700 hover:text-blue-500">Contact Us</a>
                 </nav>
-    
+
                 <!-- Call to Action Button -->
                 <div class="md:flex hidden">
                     <a href="#"
-                    class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Book
-                    Appointment</a>
+                        class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 jost">Book
+                        Appointment</a>
                 </div>
-    
+
                 <!-- Mobile Menu Toggle Button -->
                 <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
                     <!-- Hamburger Icon -->
                     <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
                         class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                     <!-- Close Icon -->
                     <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
                         class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
-    
+
             <!-- Mobile Menu -->
             <div id="mobile-menu"
-                class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
-                <nav class="space-y-2 py-4 px-4">
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">Home</a>
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">About Us</a>
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">Services</a>
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">Blog</a>
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">Gallery</a>
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">Contact Us</a>
-                    <a href="#" class="block bg-blue-500 text-white text-center px-4 py-2 rounded-lg hover:bg-blue-600">Book
-                        Appointment</a>
-                </nav>
-            </div>
+            class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
+            <nav class="space-y-2 py-4 px-4 text-center">
+              <a href="#" class="block text-gray-700 hover:text-blue-500 py-[5px]">Home</a>
+              <a href="./pages/about.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">About Us</a>
+              <a href="./pages/sevices.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Services</a>
+              <a href="./pages/blog.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Blog</a>
+              <a href="./pages/gallery.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Gallery</a>
+              <a href="./pages/contact.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Contact Us</a>
+              <a href="./pages/video.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Videos</a>
+            </nav>
+          </div>
         </div>
     </header>
 
@@ -117,7 +120,7 @@
                 <div
                     class="md:w-1/2   md:text-center lg:text-left md:mt-[180px] absolute  md:left-[200px] left-[15px] top-[100px]">
                     <h3 class="text-pink-500 text-sm uppercase font-bold">Show Our Memories</h3>
-                    <h1 class="md:text-3xl text-[20px] font-bold text-gray-800">Gallery</h1>
+                    <h1 class="md:text-6xl text-[20px] font-bold text-gray-800 jost">Gallery</h1>
                 </div>
 
                 <!-- Right Section: Image -->
@@ -141,87 +144,111 @@
     </section>
 
     <section class="md:px-[60px] px-[20px] relative">
-        <div class="absolute opacity-10 right-[0%] bottom-[0%] md:block hidden"><img src="../imgs/home/section1foot.png" alt="" srcset="" class="w-[150px]"></div>
+        <div class="absolute opacity-10 right-[0%] bottom-[0%] md:block hidden"><img src="../imgs/home/section1foot.png"
+                alt="" srcset="" class="w-[150px]"></div>
         <div class="container mx-auto">
             <div class="text-center my-12">
                 <h2 class="text-xl font-bold text-pink-600">Our Gallery</h2>
-                <h3 class="text-3xl font-semibold mb-4">Health and Wellness</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit magna at dui commodo facilisis. Vestibulum viverra risus id diam hendrerit vehicula.</p>
-              </div>
+                <h3 class="text-3xl font-semibold mb-4 jost">Health and Wellness</h3>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit magna
+                    at dui commodo facilisis. Vestibulum viverra risus id diam hendrerit vehicula.</p>
+            </div>
             <div class="md:px-[30px] px-20px">
                 <div class="md:flex">
                     <div class="flex md:w-3/6 w-full md:pr-[10px] pr-[5px] md:mt-[0px] mt-[15px]">
                         <div class="md:w-2/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/1.png" alt="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/1.png" alt=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                         <div class="md:w-3/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/2.png" alt="" srcset="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/2.png" alt="" srcset=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                     </div>
                     <div class="flex md:w-3/6 w-full md:pl-[10px] pl-[5px] md:mt-[0px] mt-[15px]">
                         <div class="md:w-2/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/3.png" alt="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/3.png" alt=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                         <div class="md:w-3/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/4.png" alt="" srcset="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/4.png" alt="" srcset=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                     </div>
                 </div>
                 <div class="md:flex">
                     <div class="flex md:w-3/6 w-full md:pr-[10px] pr-[5px] md:mt-[15px] mt-[15px]">
                         <div class="md:w-3/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/5.png" alt="" srcset="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover object-top">
+                            <img src="../imgs/gallery/5.png" alt="" srcset=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover object-top">
                         </div>
                         <div class="md:w-2/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/6.png" alt="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/6.png" alt=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                     </div>
                     <div class="flex md:w-3/6 w-full md:pl-[10px] pl-[5px] md:mt-[15px] mt-[15px]">
                         <div class="md:w-3/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/7.png" alt="" srcset="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/7.png" alt="" srcset=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                         <div class="md:w-2/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/8.png" alt="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/8.png" alt=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                     </div>
                 </div>
                 <div class="md:flex">
                     <div class="flex md:w-3/6 w-full md:pr-[10px] pr-[5px] md:mt-[15px] mt-[15px]">
                         <div class="md:w-2/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/9.png" alt="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/9.png" alt=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                         <div class="md:w-3/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/10.png" alt="" srcset="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/10.png" alt="" srcset=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                     </div>
                     <div class="flex md:w-3/6 w-full md:pl-[10px] pl-[5px] md:mt-[15px] mt-[15px]">
                         <div class="md:w-2/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/11.png" alt="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/11.png" alt=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                         <div class="md:w-3/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/12.png" alt="" srcset="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/12.png" alt="" srcset=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                     </div>
                 </div>
                 <div class="md:flex">
                     <div class="flex md:w-3/6 w-full md:pr-[10px] pr-[5px] md:mt-[15px] mt-[15px]">
                         <div class="md:w-3/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/13.png" alt="" srcset="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover object-top">
+                            <img src="../imgs/gallery/13.png" alt="" srcset=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover object-top">
                         </div>
                         <div class="md:w-2/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/14.png" alt="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/14.png" alt=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                     </div>
                     <div class="flex md:w-3/6 w-full md:pl-[10px] pl-[5px] md:mt-[15px] mt-[15px]">
                         <div class="md:w-3/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/15.png" alt="" srcset="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/15.png" alt="" srcset=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                         <div class="md:w-2/5 w-2/4 px-[10px]">
-                            <img src="../imgs/gallery/16.png" alt="" class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
+                            <img src="../imgs/gallery/16.png" alt=""
+                                class="w-full md:h-[350px] h-[200px] rounded-[10px] object-cover">
                         </div>
                     </div>
+                </div>
+                <div class="md:flex justify-center mt-[15px]">
+                    <a href="#"
+                        class=" bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 jost">Load More Photos<i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
+                        class="fa-solid fa-chevron-right text-xs"></i></a>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -231,10 +258,11 @@
                 <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
                     <!-- Text Content -->
                     <div class="lg:w-1/2 text-center lg:text-left mb-6 lg:mb-0">
-                        <h3 class="md:text-[50px] text-[25px] font-bold mb-4">Still confused about your career choice?
+                        <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost">Still confused about your career
+                            choice?
                             consult with our experts</h3>
                         <a href="#"
-                            class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition">
+                            class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition jost">
                             Get In Touch <i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
                                 class="fa-solid fa-chevron-right text-xs"></i>
                         </a>
@@ -254,111 +282,102 @@
 
     <!-- footer  -->
     <div>
-        <footer class="bg-[#1F1F1F] text-white py-8 md:mt-[150px] relative">
-            <!-- Subscription Box -->
-            <div
-                class="md:block hidden bg-white px-4 py-4 rounded-[10px] md:w-[900px] w-[100px] absolute md:-top-[50px] md:left-[360px]">
-                <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-                    <h3 class="font-semibold text-2xl text-black">Subscribe for the exclusive updates!</h3>
-                    <div class="flex space-x-2">
-                        <input type="email" placeholder="Enter Your Email Address"
-                            class="px-4 py-2 w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
-                        <button class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe
-                            Now</button>
-                    </div>
-                </div>
+        <footer class="bg-[#1F1F1F] text-white py-8 mt-[80px] md:mt-[150px] relative">
+          <!-- Subscription Box -->
+          <div
+            class=" bg-white shadow-lg md:px-4 md:py-4  py-2 px-2 rounded-[10px] md:w-[900px] absolute md:-top-[50px] md:left-[360px] -top-[5%] left-[10%]">
+            <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+              <h3 class="font-semibold md:text-2xl text-xl text-black jost">Subscribe for the exclusive updates!</h3>
+              <div class="flex space-x-2">
+                <input type="email" placeholder="Enter Your Email Address"
+                  class="px-4 py-2 md:w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
+                <button class="md:px-6 md:py-2 bg-blue-500  text-white rounded-md hover:bg-blue-600 jost">Subscribe Now</button>
+              </div>
             </div>
-
-            <div class="container px-4 py-12">
-                <div
-                    class="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start space-y-4 lg:space-y-0">
-                    <!-- Logo and Description -->
-                    <div class="flex flex-col items-center lg:items-start text-center lg:text-left md:px-[100px]">
-                        <div>
-                            <img src="../imgs/home/footerlogo.png" alt="" class="md:mt-[10px]">
-                        </div>
-                        <div class="md:w-[450px] pt-[10px] pb-[10px]">
-                            <p class="text-sm mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
-                        </div>
-                        <div class="flex flex-wrap space-x-4">
-                            <div class="w-[30px] h-[30px] rounded-full bg-white">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
-                            </div>
-                            <div class="w-[30px] h-[30px] rounded-full bg-white">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-brands fa-instagram py-[7px] px-[8px]"></i></a>
-                            </div>
-                            <div class="w-[30px] h-[30px] rounded-full bg-white">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Links -->
-                    <div class="flex flex-col space-y-4 md:px-[40px]">
-                        <h3 class="font-semibold">Pages</h3>
-                        <a href="#" class="text-gray-400 text-[14px]">Home</a>
-                        <a href="#" class="text-gray-400 text-[14px]">About Us</a>
-                        <a href="#" class="text-gray-400 text-[14px]">Services</a>
-                        <a href="#" class="text-gray-400 text-[14px]">Gallery</a>
-                        <a href="#" class="text-gray-400 text-[14px]">Contact Us</a>
-                    </div>
-
-                    <!-- Support -->
-                    <div class="flex flex-col space-y-4 text-center md:text-left md:px-[40px]">
-                        <h3 class="font-semibold">Support</h3>
-                        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-                        <a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a>
-                        <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
-                    </div>
-
-                    <!-- Contact -->
-                    <div class="flex flex-col space-y-4 md:text-left text-center md:px-[40px]">
-                        <h3 class="font-semibold">Contact</h3>
-                        <div class=" flex flex-wrap">
-                            <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
-                            </div>
-                            <div class="w-[300px] pl-[15px]">
-                                <p class="text-sm text-gray-400">
-                                    404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road,
-                                    Adajan Road,
-                                    Surat, Gujarat 395009
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap">
-                            <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
-                            </div>
-                            <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">+91-999999999</p>
-                        </div>
-                        <div class="flex flex-wrap pt-[10px]">
-                            <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
-                            </div>
-                            <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">dr.ankur@gmail.com</p>
-                        </div>
-                    </div>
+          </div>
+    
+          <div class="container px-4 py-12">
+            <div class="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start space-y-4 lg:space-y-0">
+              <!-- Logo and Description -->
+              <div class="flex flex-col items-center lg:items-start text-center lg:text-left md:px-[100px]">
+                <div>
+                  <img src="../imgs/home/footerlogo.png" alt="" class="md:mt-[10px]">
                 </div>
-
-                <!-- Footer Bottom -->
-            </div>
-            <div class="border-t border-t-[1px]">
-                <div class="container">
-                    <div class="mt-10 text-center text-gray-400 text-sm">
-                        All Rights Reserved | Designed & Developed by Tapit Technology
-                    </div>
+                <div class="md:w-[450px] pt-[10px] pb-[10px]">
+                  <p class="text-sm mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the..</p>
                 </div>
+                <div class="flex flex-wrap space-x-4">
+                  <div class="w-[30px] h-[30px] rounded-full bg-white">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+                  </div>
+                  <div class="w-[30px] h-[30px] rounded-full bg-white">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-instagram py-[7px] px-[8px]"></i></a>
+                  </div>
+                  <div class="w-[30px] h-[30px] rounded-full bg-white">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Links -->
+              <div class="flex flex-col space-y-4 md:px-[40px]">
+                <h3 class="font-semibold">Pages</h3>
+                <a href="#" class="text-gray-400 text-[14px]">Home</a>
+                <a href="#" class="text-gray-400 text-[14px]">About Us</a>
+                <a href="#" class="text-gray-400 text-[14px]">Services</a>
+                <a href="#" class="text-gray-400 text-[14px]">Gallery</a>
+                <a href="#" class="text-gray-400 text-[14px]">Contact Us</a>
+              </div>
+    
+              <!-- Support -->
+              <div class="flex flex-col space-y-4 text-center md:text-left md:px-[40px]">
+                <h3 class="font-semibold">Support</h3>
+                <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a>
+                <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+              </div>
+    
+              <!-- Contact -->
+              <div class="flex flex-col space-y-4 md:text-left text-center md:px-[40px]">
+                <h3 class="font-semibold">Contact</h3>
+                <div class=" flex flex-wrap">
+                  <div class="w-[30px] h-[30px] rounded-full bg-white ">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+                  </div>
+                  <div class="w-[300px] pl-[15px]">
+                    <p class="text-sm text-gray-400">
+                      404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
+                      Surat, Gujarat 395009
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap">
+                  <div class="w-[30px] h-[30px] rounded-full bg-white ">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+                  </div>
+                  <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">+91-999999999</p>
+                </div>
+                <div class="flex flex-wrap pt-[10px]">
+                  <div class="w-[30px] h-[30px] rounded-full bg-white ">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
+                  </div>
+                  <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">dr.ankur@gmail.com</p>
+                </div>
+              </div>
             </div>
+    
+            <!-- Footer Bottom -->
+          </div>
+          <div class="border-t border-t-[1px]">
+            <div class="container">
+              <div class="mt-10 text-center text-gray-400 text-sm">
+                All Rights Reserved | Designed & Developed by Tapit Technology
+              </div>
+            </div>
+          </div>
         </footer>
-    </div>
+      </div>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         * {
@@ -47,7 +48,7 @@
     </script>
 </head>
 
-<body>
+<body class="outfit">
     <header class="bg-white shadow-md">
         <div class="container mx-auto">
             <div class=" px-4 py-3 flex items-center justify-between">
@@ -60,18 +61,19 @@
 
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-6 md:mr-[300px]">
-                    <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-500">Home</a>
                     <a href="#" class="text-gray-700 hover:text-blue-500">About Us</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-500">Services</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-500">Blog</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-500">Gallery</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-500">Contact Us</a>
+                    <a href="./sevices.html" class="text-gray-700 hover:text-blue-500">Services</a>
+                    <a href="./blog.html" class="text-gray-700 hover:text-blue-500">Blog</a>
+                    <a href="./gallery.html" class="text-gray-700 hover:text-blue-500">Gallery</a>
+                    <a href="./video.html" class="block text-gray-700 hover:text-blue-500">Videos</a>
+                    <a href="./contact.html" class="text-gray-700 hover:text-blue-500">Contact Us</a>
                 </nav>
 
                 <!-- Call to Action Button -->
                 <div class="md:flex hidden">
                     <a href="#"
-                        class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Book
+                        class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 jost">Book
                         Appointment</a>
                 </div>
 
@@ -96,16 +98,17 @@
 
             <!-- Mobile Menu -->
             <div id="mobile-menu"
-                class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
-                <nav class="space-y-2 py-4 px-4">
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">Home</a>
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">About Us</a>
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">Services</a>
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">Blog</a>
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">Gallery</a>
-                    <a href="#" class="block text-gray-700 hover:text-blue-500">Contact Us</a>
-                </nav>
-            </div>
+            class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
+            <nav class="space-y-2 py-4 px-4 text-center">
+              <a href="#" class="block text-gray-700 hover:text-blue-500 py-[5px]">Home</a>
+              <a href="./pages/about.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">About Us</a>
+              <a href="./pages/sevices.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Services</a>
+              <a href="./pages/blog.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Blog</a>
+              <a href="./pages/gallery.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Gallery</a>
+              <a href="./pages/contact.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Contact Us</a>
+              <a href="./pages/video.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Videos</a>
+            </nav>
+          </div>
         </div>
     </header>
 
@@ -117,7 +120,7 @@
                 <div
                     class="md:w-1/2   md:text-center lg:text-left md:mt-[180px] absolute  md:left-[200px] left-[15px] top-[100px]">
                     <h3 class="text-pink-500 text-sm uppercase font-bold">Who We Are?</h3>
-                    <h1 class="md:text-3xl text-[20px] font-bold text-gray-800">About Us</h1>
+                    <h1 class="md:text-5xl text-[20px] font-bold text-gray-800 jost">About Us</h1>
                 </div>
 
                 <!-- Right Section: Image -->
@@ -159,7 +162,7 @@
                                                         stroke-width="2" d="M5 13l4 4L19 7" />
                                                 </svg>
                                             </span>
-                                            <span class="ml-3 text-gray-700 md:text-3xl text-[12px]">Preventing
+                                            <span class="ml-3 text-gray-700 md:text-3xl text-[12px] jost">Preventing
                                                 Childhood Obesity</span>
                                         </li>
                                         <li class="flex items-center">
@@ -170,7 +173,7 @@
                                                         stroke-width="2" d="M5 13l4 4L19 7" />
                                                 </svg>
                                             </span>
-                                            <span class="ml-3 text-gray-700 md:text-3xl text-[12px]">Diabetes In
+                                            <span class="ml-3 text-gray-700 md:text-3xl text-[12px] jost">Diabetes In
                                                 Children Symptoms</span>
                                         </li>
                                         <li class="flex items-center">
@@ -181,7 +184,7 @@
                                                         stroke-width="2" d="M5 13l4 4L19 7" />
                                                 </svg>
                                             </span>
-                                            <span class="ml-3 text-gray-700 md:text-3xl text-[12px]">Newborn Care
+                                            <span class="ml-3 text-gray-700 md:text-3xl text-[12px] jost">Newborn Care
                                                 FAQs</span>
                                         </li>
                                         <li class="flex items-center">
@@ -192,7 +195,7 @@
                                                         stroke-width="2" d="M5 13l4 4L19 7" />
                                                 </svg>
                                             </span>
-                                            <span class="ml-3 text-gray-700 md:text-3xl text-[12px]">Testing For Adhd in
+                                            <span class="ml-3 text-gray-700 md:text-3xl text-[12px] jost">Testing For Adhd in
                                                 Children</span>
                                         </li>
                                         <li class="flex items-center">
@@ -203,7 +206,7 @@
                                                         stroke-width="2" d="M5 13l4 4L19 7" />
                                                 </svg>
                                             </span>
-                                            <span class="ml-3 text-gray-700 md:text-3xl text-[12px]">Customer Support
+                                            <span class="ml-3 text-gray-700 md:text-3xl text-[12px] jost">Customer Support
                                                 Services</span>
                                         </li>
                                     </ul>
@@ -224,7 +227,7 @@
                 <div class="md:w-2/4 w-full md:px-[50px] px-[30px] md:order-2 -order-[1] md:mb-[0px] mb-[20px]">
                     <div>
                         <p class="text-pink-500 font-semibold uppercase">About Us</p>
-                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 mt-[10px] sm:text-4xl">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 mt-[10px] sm:text-4xl jost">
                             You Can Find Pediatra At Your Fingertips
                         </h2>
                         <p class="text-gray-600 mt-[15px]">
@@ -250,7 +253,7 @@
                                                 d="M5 13l4 4L19 7" />
                                         </svg>
                                     </span>
-                                    <span class="ml-3 text-gray-700 md:text-[18px] text-[12px]">Preventing Childhood
+                                    <span class="ml-3 text-gray-700 md:text-[18px] text-[12px] jost">Preventing Childhood
                                         Obesity</span>
                                 </li>
                                 <li class="flex items-center">
@@ -261,7 +264,7 @@
                                                 d="M5 13l4 4L19 7" />
                                         </svg>
                                     </span>
-                                    <span class="ml-3 text-gray-700 md:text-[18px] text-[12px]">Diabetes In Children
+                                    <span class="ml-3 text-gray-700 md:text-[18px] text-[12px] jost">Diabetes In Children
                                         Symptoms</span>
                                 </li>
                                 <li class="flex items-center">
@@ -272,7 +275,7 @@
                                                 d="M5 13l4 4L19 7" />
                                         </svg>
                                     </span>
-                                    <span class="ml-3 text-gray-700 md:text-[18px] text-[12px]">Newborn Care FAQs</span>
+                                    <span class="ml-3 text-gray-700 md:text-[18px] text-[12px] jost">Newborn Care FAQs</span>
                                 </li>
                                 <li class="flex items-center">
                                     <span class="bg-pink-100 text-pink-500 p-2 rounded-full">
@@ -282,7 +285,7 @@
                                                 d="M5 13l4 4L19 7" />
                                         </svg>
                                     </span>
-                                    <span class="ml-3 text-gray-700 md:text-[18px] text-[12px]">Testing For Adhd in
+                                    <span class="ml-3 text-gray-700 md:text-[18px] text-[12px] jost">Testing For Adhd in
                                         Children</span>
                                 </li>
                                 <li class="flex items-center">
@@ -293,7 +296,7 @@
                                                 d="M5 13l4 4L19 7" />
                                         </svg>
                                     </span>
-                                    <span class="ml-3 text-gray-700 md:text-[18px] text-[12px]">Customer Support
+                                    <span class="ml-3 text-gray-700 md:text-[18px] text-[12px] jost">Customer Support
                                         Services</span>
                                 </li>
                             </ul>
@@ -318,7 +321,7 @@
                     alt="" srcset=""></div>
             <div class="md:hidden block">
                 <p class="text-pink-500 font-semibold uppercase mb-4">Unexpected Pregnancy</p>
-                <h2 class="md:text-3xl text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
+                <h2 class="md:text-3xl text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6 jost">
                     I Am Pregnant, What Now?
                 </h2>
             </div>
@@ -327,7 +330,7 @@
                 <div>
                     <div class="md:block hidden">
                         <p class="text-pink-500 font-semibold uppercase mb-4">Unexpected Pregnancy</p>
-                        <h2 class="md:text-3xl text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
+                        <h2 class="md:text-3xl text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6 jost">
                             I Am Pregnant, What Now?
                         </h2>
                     </div>
@@ -338,7 +341,7 @@
                             1
                         </div>
                         <div class="ml-4">
-                            <h3 class="text-lg font-bold text-gray-900">Confide In Those You Trust.</h3>
+                            <h3 class="text-lg font-bold text-gray-900 jost">Confide In Those You Trust.</h3>
                             <p class="text-gray-600">
                                 The benefit of an excellent health care system. We are very prominent in our service.
                                 because of our clients' belief and trust.
@@ -352,7 +355,7 @@
                             2
                         </div>
                         <div class="ml-4">
-                            <h3 class="text-lg font-bold text-gray-900">Take A Pregnancy Test.</h3>
+                            <h3 class="text-lg font-bold text-gray-900 jost">Take A Pregnancy Test.</h3>
                             <p class="text-gray-600">
                                 The benefit of an excellent health care system. We are very prominent in our service
                                 because of our clients' belief and trust.
@@ -389,7 +392,7 @@
                 </div>   
                 <div class="md:order-2 -order-[1]">
                     <p class="text-pink-500 font-semibold uppercase">Find Useful Information</p>
-                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 mt-[10px] sm:text-4xl">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 mt-[10px] sm:text-4xl jost">
                         Prenatal Care & Tests 
                     </h2>
                     <p class="text-gray-600 mt-[20px]">
@@ -416,7 +419,7 @@
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <!-- Text Section -->
           <div>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 jost">
               Providing Quality Of Life To Our Children Is Our Mission
             </h2>
             <p class="text-gray-600 font-medium mb-6">
@@ -432,7 +435,7 @@
               <div class="relative">
                 <img src="../imgs/about/last-1.png" alt="Our Mission" class="w-full h-[250px] object-cover">
               <div class="absolute inset-0 bg-black opacity-10 backdrop-blur-[3px]"></div>
-              <h3 class="absolute bottom-[3%] left-[3%] font-semibold text-white uppercase">Our Mission</h3>
+              <h3 class="absolute bottom-[3%] left-[3%] font-semibold text-white uppercase jost">Our Mission</h3>
               </div>
               <div class="p-4">
                 <p class="text-gray-600 text-sm">
@@ -446,7 +449,7 @@
                 <div class="relative">
                   <img src="../imgs/about/last-2.png" alt="Our Mission" class="w-full h-[250px] object-cover">
                 <div class="absolute inset-0 bg-black opacity-10 backdrop-blur-[3px]"></div>
-                <h3 class="absolute bottom-[3%] left-[3%] font-semibold text-white uppercase">Our Vision</h3>
+                <h3 class="absolute bottom-[3%] left-[3%] font-semibold text-white uppercase jost">Our Vision</h3>
                 </div>
                 <div class="p-4">
                   <p class="text-gray-600 text-sm">
@@ -465,10 +468,10 @@
                 <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
                     <!-- Text Content -->
                     <div class="lg:w-1/2 text-center lg:text-left mb-6 lg:mb-0">
-                        <h3 class="md:text-[50px] text-[25px] font-bold mb-4">Still confused about your career choice?
+                        <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost">Still confused about your career choice?
                             consult with our experts</h3>
                         <a href="#"
-                            class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition">
+                            class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition jost">
                             Get In Touch <i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
                                 class="fa-solid fa-chevron-right text-xs"></i>
                         </a>
@@ -488,111 +491,102 @@
 
     <!-- footer  -->
     <div>
-        <footer class="bg-[#1F1F1F] text-white py-8 md:mt-[150px] relative">
-            <!-- Subscription Box -->
-            <div
-                class="md:block hidden bg-white px-4 py-4 rounded-[10px] md:w-[900px] w-[100px] absolute md:-top-[50px] md:left-[360px]">
-                <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-                    <h3 class="font-semibold text-2xl text-black">Subscribe for the exclusive updates!</h3>
-                    <div class="flex space-x-2">
-                        <input type="email" placeholder="Enter Your Email Address"
-                            class="px-4 py-2 w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
-                        <button class="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Subscribe
-                            Now</button>
-                    </div>
-                </div>
+        <footer class="bg-[#1F1F1F] text-white py-8 mt-[80px] md:mt-[150px] relative">
+          <!-- Subscription Box -->
+          <div
+            class=" bg-white shadow-lg md:px-4 md:py-4  py-2 px-2 rounded-[10px] md:w-[900px] absolute md:-top-[50px] md:left-[360px] -top-[5%] left-[10%]">
+            <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+              <h3 class="font-semibold md:text-2xl text-xl text-black jost">Subscribe for the exclusive updates!</h3>
+              <div class="flex space-x-2">
+                <input type="email" placeholder="Enter Your Email Address"
+                  class="px-4 py-2 md:w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
+                <button class="md:px-6 md:py-2 bg-blue-500  text-white rounded-md hover:bg-blue-600 jost">Subscribe Now</button>
+              </div>
             </div>
-
-            <div class="container px-4 py-12">
-                <div
-                    class="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start space-y-4 lg:space-y-0">
-                    <!-- Logo and Description -->
-                    <div class="flex flex-col items-center lg:items-start text-center lg:text-left md:px-[100px]">
-                        <div>
-                            <img src="../imgs/home/footerlogo.png" alt="" class="md:mt-[10px]">
-                        </div>
-                        <div class="md:w-[450px] pt-[10px] pb-[10px]">
-                            <p class="text-sm mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
-                        </div>
-                        <div class="flex flex-wrap space-x-4">
-                            <div class="w-[30px] h-[30px] rounded-full bg-white">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
-                            </div>
-                            <div class="w-[30px] h-[30px] rounded-full bg-white">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-brands fa-instagram py-[7px] px-[8px]"></i></a>
-                            </div>
-                            <div class="w-[30px] h-[30px] rounded-full bg-white">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Links -->
-                    <div class="flex flex-col space-y-4 md:px-[40px]">
-                        <h3 class="font-semibold">Pages</h3>
-                        <a href="#" class="text-gray-400 text-[14px]">Home</a>
-                        <a href="#" class="text-gray-400 text-[14px]">About Us</a>
-                        <a href="#" class="text-gray-400 text-[14px]">Services</a>
-                        <a href="#" class="text-gray-400 text-[14px]">Gallery</a>
-                        <a href="#" class="text-gray-400 text-[14px]">Contact Us</a>
-                    </div>
-
-                    <!-- Support -->
-                    <div class="flex flex-col space-y-4 text-center md:text-left md:px-[40px]">
-                        <h3 class="font-semibold">Support</h3>
-                        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-                        <a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a>
-                        <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
-                    </div>
-
-                    <!-- Contact -->
-                    <div class="flex flex-col space-y-4 md:text-left text-center md:px-[40px]">
-                        <h3 class="font-semibold">Contact</h3>
-                        <div class=" flex flex-wrap">
-                            <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
-                            </div>
-                            <div class="w-[300px] pl-[15px]">
-                                <p class="text-sm text-gray-400">
-                                    404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road,
-                                    Adajan Road,
-                                    Surat, Gujarat 395009
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap">
-                            <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
-                            </div>
-                            <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">+91-999999999</p>
-                        </div>
-                        <div class="flex flex-wrap pt-[10px]">
-                            <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                                <a href="#" class="text-[#EA558F]"><i
-                                        class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
-                            </div>
-                            <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">dr.ankur@gmail.com</p>
-                        </div>
-                    </div>
+          </div>
+    
+          <div class="container px-4 py-12">
+            <div class="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start space-y-4 lg:space-y-0">
+              <!-- Logo and Description -->
+              <div class="flex flex-col items-center lg:items-start text-center lg:text-left md:px-[100px]">
+                <div>
+                  <img src="../imgs/home/footerlogo.png" alt="" class="md:mt-[10px]">
                 </div>
-
-                <!-- Footer Bottom -->
-            </div>
-            <div class="border-t border-t-[1px]">
-                <div class="container">
-                    <div class="mt-10 text-center text-gray-400 text-sm">
-                        All Rights Reserved | Designed & Developed by Tapit Technology
-                    </div>
+                <div class="md:w-[450px] pt-[10px] pb-[10px]">
+                  <p class="text-sm mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the..</p>
                 </div>
+                <div class="flex flex-wrap space-x-4">
+                  <div class="w-[30px] h-[30px] rounded-full bg-white">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+                  </div>
+                  <div class="w-[30px] h-[30px] rounded-full bg-white">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-instagram py-[7px] px-[8px]"></i></a>
+                  </div>
+                  <div class="w-[30px] h-[30px] rounded-full bg-white">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Links -->
+              <div class="flex flex-col space-y-4 md:px-[40px]">
+                <h3 class="font-semibold">Pages</h3>
+                <a href="#" class="text-gray-400 text-[14px]">Home</a>
+                <a href="#" class="text-gray-400 text-[14px]">About Us</a>
+                <a href="#" class="text-gray-400 text-[14px]">Services</a>
+                <a href="#" class="text-gray-400 text-[14px]">Gallery</a>
+                <a href="#" class="text-gray-400 text-[14px]">Contact Us</a>
+              </div>
+    
+              <!-- Support -->
+              <div class="flex flex-col space-y-4 text-center md:text-left md:px-[40px]">
+                <h3 class="font-semibold">Support</h3>
+                <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a>
+                <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+              </div>
+    
+              <!-- Contact -->
+              <div class="flex flex-col space-y-4 md:text-left text-center md:px-[40px]">
+                <h3 class="font-semibold">Contact</h3>
+                <div class=" flex flex-wrap">
+                  <div class="w-[30px] h-[30px] rounded-full bg-white ">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+                  </div>
+                  <div class="w-[300px] pl-[15px]">
+                    <p class="text-sm text-gray-400">
+                      404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
+                      Surat, Gujarat 395009
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap">
+                  <div class="w-[30px] h-[30px] rounded-full bg-white ">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+                  </div>
+                  <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">+91-999999999</p>
+                </div>
+                <div class="flex flex-wrap pt-[10px]">
+                  <div class="w-[30px] h-[30px] rounded-full bg-white ">
+                    <a href="#" class="text-[#EA558F]"><i class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
+                  </div>
+                  <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">dr.ankur@gmail.com</p>
+                </div>
+              </div>
             </div>
+    
+            <!-- Footer Bottom -->
+          </div>
+          <div class="border-t border-t-[1px]">
+            <div class="container">
+              <div class="mt-10 text-center text-gray-400 text-sm">
+                All Rights Reserved | Designed & Developed by Tapit Technology
+              </div>
+            </div>
+          </div>
         </footer>
-    </div>
+      </div>
 </body>
 
 </html>
