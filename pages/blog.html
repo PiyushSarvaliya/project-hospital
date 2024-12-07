@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     * {
@@ -31,21 +32,22 @@
       }
     }
     function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const toggleIconOpen = document.getElementById('menu-icon-open');
-            const toggleIconClose = document.getElementById('menu-icon-close');
+      const menu = document.getElementById('mobile-menu');
+      const toggleIconOpen = document.getElementById('menu-icon-open');
+      const toggleIconClose = document.getElementById('menu-icon-close');
 
-            menu.classList.toggle('hidden'); // Toggle visibility
-            menu.classList.toggle('max-h-0'); // For smooth opening/closing
-            menu.classList.toggle('max-h-screen'); // For smooth opening/closing
-            menu.classList.toggle('transition-transform');
-            menu.classList.toggle('duration-1000');
-            // Toggle icons
-            toggleIconOpen.classList.toggle('hidden');
-            toggleIconClose.classList.toggle('hidden');
-        }
+      menu.classList.toggle('hidden'); // Toggle visibility
+      menu.classList.toggle('max-h-0'); // For smooth opening/closing
+      menu.classList.toggle('max-h-screen'); // For smooth opening/closing
+      menu.classList.toggle('transition-transform');
+      menu.classList.toggle('duration-1000');
+      // Toggle icons
+      toggleIconOpen.classList.toggle('hidden');
+      toggleIconClose.classList.toggle('hidden');
+    }
   </script>
 </head>
+
 <body class="outfit">
   <header class="bg-white shadow-md">
     <div class="container mx-auto">
@@ -109,308 +111,314 @@
     </div>
   </header>
 
-    <section class="bg-[#B2D6E9] relative md:h-[550px]  h-[250px]">
-      <div>
-          <div class="container flex flex-col lg:flex-row items-center lg:items-start px-4 py-8 lg:px-16 lg:py-16 relative">
-              <!-- Left Section: Text -->
-              <div class="md:w-1/2   md:text-center lg:text-left md:mt-[180px] absolute  md:left-[200px] left-[15px] top-[100px]">
-                  <h3 class="text-pink-500 text-sm uppercase font-bold">Latest News</h3>
-                  <h1 class="md:text-6xl text-[20px] font-bold text-gray-800 jost">Blog</h1>
-              </div>
-  
-              <!-- Right Section: Image -->
-              <div class="md:w-1/2  flex justify-center mt-8 md:-right-[30px] md:top-[40px] z-10 absolute top-[0px] right-[50px]">
-                  <img src="../imgs/blog/banner2.png" alt="" class="md:w-[400px] w-[170px]">
-              </div>
-          </div>
-          
-          <div class="absolute md:bottom-[0px] bottom-[0px]"><img src="../imgs/blog/secbannerbottom.png" alt="" srcset="" class="md:w-full w-[100px]"></div>
-      <div class="absolute top-0 left-0"><img src="../imgs/blog/Ellipse 1.png" alt="" srcset="" class="md:w-[450px] w-[100px]"></div>
-      <div class="absolute md:right-[500px] md:-top-[20px] top-[0px] right-[170px]"><img src="../imgs/blog/bannerrighttop.png" alt=""
-              srcset="" class="md:w-full w-[100px]"></div>
-      <div class="absolute md:top-[135px] md:right-[200px] right-0 bg-cover w-[40%] md:w-[20%] overflow-hidden"><img src="../imgs/blog/banner-png.png"
-              alt="" srcset="" class="md:w-[720px] "></div>
+  <section class="bg-[#B2D6E9] relative md:h-[550px]  h-[250px]">
+    <div>
+      <div class="container flex flex-col lg:flex-row items-center lg:items-start px-4 py-8 lg:px-16 lg:py-16 relative">
+        <!-- Left Section: Text -->
+        <div
+          class="md:w-1/2   md:text-center lg:text-left md:mt-[180px] absolute  md:left-[200px] left-[15px] top-[100px]">
+          <h3 class="text-pink-500 text-sm uppercase font-bold">Latest News</h3>
+          <h1 class="md:text-6xl text-[20px] font-bold text-gray-800 jost">Blog</h1>
+        </div>
 
+        <!-- Right Section: Image -->
+        <div
+          class="md:w-1/2  flex justify-center mt-8 md:-right-[30px] md:top-[40px] z-10 absolute top-[0px] right-[50px]">
+          <img src="../imgs/blog/banner2.png" alt="" class="md:w-[400px] w-[170px]">
+        </div>
       </div>
+
+      <div class="absolute md:bottom-[0px] bottom-[0px]"><img src="../imgs/blog/secbannerbottom.png" alt="" srcset=""
+          class="md:w-full w-[100px]"></div>
+      <div class="absolute top-0 left-0"><img src="../imgs/blog/Ellipse 1.png" alt="" srcset=""
+          class="md:w-[450px] w-[100px]"></div>
+      <div class="absolute md:right-[500px] md:-top-[20px] top-[0px] right-[170px]"><img
+          src="../imgs/blog/bannerrighttop.png" alt="" srcset="" class="md:w-full w-[100px]"></div>
+      <div class="absolute md:top-[135px] md:right-[200px] right-0 bg-cover w-[40%] md:w-[20%] overflow-hidden"><img
+          src="../imgs/blog/banner-png.png" alt="" srcset="" class="md:w-[720px] "></div>
+
+    </div>
   </section>
 
-    <div class="md:px-[100px] px-[25px] py-[60px] md:py-[100px] relative">
-      <div class="absolute opacity-10 top-[44%] left-[0%] md:block hidden"><img src="../imgs/home/section1foot.png" alt="" class="w-[150px]"></div>
-        <section class="container grid md:grid-cols-3 grid-cols-1 gap-4">
-              <!-- Card 1 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="../imgs/home/blog1.png" alt="Blog 1" class="w-full object-cover object-top">
-            <div class="p-4">
-              <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
-                  </svg>
-                  Jun 03, 2023
-                </span>
-                <span>Upload By: Admin</span>
-              </div>
-              <h4 class="text-xl font-semibold mb-2 jost">
-                How to Determine the Length of a Time - Out
-              </h4>
-              <p class="text-lg text-gray-600 mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-              </p>
-              <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
-                Read More →
-              </a>
-            </div>
+  <div class="md:px-[100px] px-[25px] py-[60px] md:py-[100px] relative">
+    <div class="absolute opacity-10 top-[44%] left-[0%] md:block hidden"><img src="../imgs/home/section1foot.png" alt=""
+        class="w-[150px]"></div>
+    <section class="container grid md:grid-cols-3 grid-cols-1 gap-4">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="../imgs/home/blog1.png" alt="Blog 1" class="w-full object-cover object-top">
+        <div class="p-4">
+          <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
+              </svg>
+              Jun 03, 2023
+            </span>
+            <span>Upload By: Admin</span>
           </div>
-
-          <!-- Card 2 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden md:h-[500px]">
-            <img src="../imgs/home/blog2.png" alt="Blog 2" class="w-full md:h-[320px] object-cover">
-            <div class="p-4">
-              <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
-                  </svg>
-                  Jun 03, 2023
-                </span>
-                <span>Upload By: Admin</span>
-              </div>
-              <h4 class="text-xl font-semibold mb-2 jost">
-                Top 10 Greatest Outdoor Activities That Kids Love
-              </h4>
-              <p class="text-lg text-gray-600 mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-              </p>
-              <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
-                Read More →
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="../imgs/home/blog3.png" alt="Blog 3" class="w-full object-cover">
-            <div class="p-4">
-              <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
-                  </svg>
-                  Jun 03, 2023
-                </span>
-                <span>Upload By: Admin</span>
-              </div>
-              <h4 class="text-xl font-semibold mb-2 jost">
-                How to Determine the Length of a Time - Out
-              </h4>
-              <p class="text-lg text-gray-600 mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-              </p>
-              <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
-                Read More →
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="../imgs/blog/4.png" alt="Blog 3" class="w-full object-cover">
-            <div class="p-4">
-              <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
-                  </svg>
-                  Jun 03, 2023
-                </span>
-                <span>Upload By: Admin</span>
-              </div>
-              <h4 class="text-xl font-semibold mb-2 jost">
-                Post Pregnancy & Child Care Mauris laoret
-              </h4>
-              <p class="text-lg text-gray-600 mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-              </p>
-              <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
-                Read More →
-              </a>
-            </div>
-          </div>
-          
-           <!-- Card 5 -->
-           <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="../imgs/blog/5.png" alt="Blog 3" class="w-full object-cover">
-            <div class="p-4">
-              <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
-                  </svg>
-                  Jun 03, 2023
-                </span>
-                <span>Upload By: Admin</span>
-              </div>
-              <h4 class="text-xl font-semibold mb-2 jost">
-                Fatherhood - Find Out Precautions kids Lovel ?
-              </h4>
-              <p class="text-lg text-gray-600 mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-              </p>
-              <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
-                Read More →
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="../imgs/blog/6.png" alt="Blog 3" class="w-full object-cover">
-            <div class="p-4">
-              <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
-                  </svg>
-                  Jun 03, 2023
-                </span>
-                <span>Upload By: Admin</span>
-              </div>
-              <h4 class="text-xl font-semibold mb-2 jost">
-                How to Determine the Length of a Time - Out
-              </h4>
-              <p class="text-lg text-gray-600 mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-              </p>
-              <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
-                Read More →
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 7 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="../imgs/blog/7.png" alt="Blog 3" class="w-full object-cover">
-            <div class="p-4">
-              <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
-                  </svg>
-                  Jun 03, 2023
-                </span>
-                <span>Upload By: Admin</span>
-              </div>
-              <h4 class="text-xl font-semibold mb-2 jost">
-                How to Determine the Length of a Time - Out
-              </h4>
-              <p class="text-lg text-gray-600 mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-              </p>
-              <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
-                Read More →
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 8 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="../imgs/blog/8.png" alt="Blog 3" class="w-full object-cover">
-            <div class="p-4">
-              <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
-                  </svg>
-                  Jun 03, 2023
-                </span>
-                <span>Upload By: Admin</span>
-              </div>
-              <h4 class="text-xl font-semibold mb-2 jost">
-                Top 10 Greatest outdoor  Activities That Kids Lovel
-              </h4>
-              <p class="text-lg text-gray-600 mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-              </p>
-              <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
-                Read More →
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 9 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="../imgs/blog/9.png" alt="Blog 3" class="w-full object-cover">
-            <div class="p-4">
-              <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
-                  </svg>
-                  Jun 03, 2023
-                </span>
-                <span>Upload By: Admin</span>
-              </div>
-              <h4 class="text-xl font-semibold mb-2 jost">
-                How to Determine the Length of a Time - Out
-              </h4>
-              <p class="text-lg text-gray-600 mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
-              </p>
-              <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
-                Read More →
-              </a>
-            </div>
-          </div>
-
-        </section>
-    </div>
-    
-
-    <div class="py-[30px]">
-      <div class="container">
-        <section class="pt-[10px] md:mx-[10px] bg-[#479CCA] text-white rounded-lg px-[30px] md:mt-[50px]">
-          <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
-            <!-- Text Content -->
-            <div class="lg:w-1/2 text-center lg:text-left mb-6 md:ml-[100px] lg:mb-0">
-              <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost md:w-[85%]">Still confused about your career choice? consult with our experts</h3>
-              <a href="./contact.html"
-                class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition jost">
-                Get In Touch <i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
-                  class="fa-solid fa-chevron-right text-xs"></i>
-              </a>
-            </div>
-            <!-- Image -->
-            <div class=" md:ml-[8px] relative">
-              <img src="../imgs/home/Ellipse 70.png" alt="" class="relative">
-              <div class="absolute md:-top-[20px] md:-left-[100px] top-[8.5%]  -left-[60px]">
-                <img src="../imgs/home/lastsec-img.png" alt="Doctor Consultation" class="md:w-[590px] w-[270px]">
-              </div>
-            </div>
-          </div>
-        </section>
+          <h4 class="text-xl font-semibold mb-2 jost">
+            How to Determine the Length of a Time - Out
+          </h4>
+          <p class="text-lg text-gray-600 mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+          </p>
+          <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
+            Read More →
+          </a>
+        </div>
       </div>
-    </div>
 
-   <!-- footer  -->
-   <div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden md:h-[520px]">
+        <img src="../imgs/home/blog2.png" alt="Blog 2" class="w-full md:h-[320px] object-cover">
+        <div class="p-6">
+          <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
+              </svg>
+              Jun 03, 2023
+            </span>
+            <span>Upload By: Admin</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 jost">
+            Top 10 Greatest Outdoor Activities That Kids Love
+          </h4>
+          <p class="text-lg text-gray-600 mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+          </p>
+          <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost ">
+            Read More →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="../imgs/home/blog3.png" alt="Blog 3" class="w-full object-cover">
+        <div class="p-4">
+          <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
+              </svg>
+              Jun 03, 2023
+            </span>
+            <span>Upload By: Admin</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 jost">
+            How to Determine the Length of a Time - Out
+          </h4>
+          <p class="text-lg text-gray-600 mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+          </p>
+          <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
+            Read More →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="../imgs/blog/4.png" alt="Blog 3" class="w-full object-cover">
+        <div class="p-4">
+          <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
+              </svg>
+              Jun 03, 2023
+            </span>
+            <span>Upload By: Admin</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 jost">
+            Post Pregnancy & Child Care Mauris laoret
+          </h4>
+          <p class="text-lg text-gray-600 mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+          </p>
+          <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
+            Read More →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="../imgs/blog/5.png" alt="Blog 3" class="w-full object-cover">
+        <div class="p-4">
+          <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
+              </svg>
+              Jun 03, 2023
+            </span>
+            <span>Upload By: Admin</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 jost">
+            Fatherhood - Find Out Precautions kids Lovel ?
+          </h4>
+          <p class="text-lg text-gray-600 mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+          </p>
+          <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
+            Read More →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="../imgs/blog/6.png" alt="Blog 3" class="w-full object-cover">
+        <div class="p-4">
+          <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
+              </svg>
+              Jun 03, 2023
+            </span>
+            <span>Upload By: Admin</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 jost">
+            How to Determine the Length of a Time - Out
+          </h4>
+          <p class="text-lg text-gray-600 mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+          </p>
+          <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
+            Read More →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="../imgs/blog/7.png" alt="Blog 3" class="w-full object-cover">
+        <div class="p-4">
+          <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
+              </svg>
+              Jun 03, 2023
+            </span>
+            <span>Upload By: Admin</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 jost">
+            How to Determine the Length of a Time - Out
+          </h4>
+          <p class="text-lg text-gray-600 mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+          </p>
+          <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
+            Read More →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="../imgs/blog/8.png" alt="Blog 3" class="w-full object-cover">
+        <div class="p-4">
+          <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
+              </svg>
+              Jun 03, 2023
+            </span>
+            <span>Upload By: Admin</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 jost">
+            Top 10 Greatest outdoor Activities That Kids Lovel
+          </h4>
+          <p class="text-lg text-gray-600 mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+          </p>
+          <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
+            Read More →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="../imgs/blog/9.png" alt="Blog 3" class="w-full object-cover">
+        <div class="p-4">
+          <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m0 0h4m-4 4h4m-4 0a4 4 0 00-4 4v1m8-5V3m0 0h4m-4 4h4m-4 0a4 4 0 014 4v1m-4-5v5"></path>
+              </svg>
+              Jun 03, 2023
+            </span>
+            <span>Upload By: Admin</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 jost">
+            How to Determine the Length of a Time - Out
+          </h4>
+          <p class="text-lg text-gray-600 mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+          </p>
+          <a href="./singleblog.html" class="text-blue-500 font-semibold text-sm hover:underline jost">
+            Read More →
+          </a>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+
+  <div class="py-[30px]">
+    <div class="container">
+      <section class="pt-[10px] md:mx-[10px] bg-[#479CCA] text-white rounded-lg px-[30px] md:mt-[50px]">
+        <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
+          <!-- Text Content -->
+          <div class="lg:w-1/2 text-center lg:text-left mb-6 md:ml-[100px] lg:mb-0">
+            <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost md:w-[85%]">Still confused about your career
+              choice? consult with our experts</h3>
+            <a href="./contact.html"
+              class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition jost">
+              Get In Touch <i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
+                class="fa-solid fa-chevron-right text-xs"></i>
+            </a>
+          </div>
+          <!-- Image -->
+          <div class=" md:ml-[8px] relative">
+            <img src="../imgs/home/Ellipse 70.png" alt="" class="relative">
+            <div class="absolute md:-top-[20px] md:-left-[100px] top-[8.5%]  -left-[60px]">
+              <img src="../imgs/home/lastsec-img.png" alt="Doctor Consultation" class="md:w-[590px] w-[270px]">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <div>
     <footer class="bg-[#1F1F1F] text-white py-8 mt-[80px] md:mt-[150px] relative">
       <!-- Subscription Box -->
       <div
@@ -420,7 +428,8 @@
           <div class="flex space-x-2">
             <input type="email" placeholder="Enter Your Email Address"
               class="px-4 py-2 md:w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
-            <button class="md:px-6 md:py-2 bg-blue-500  text-white rounded-md hover:bg-blue-600 jost">Subscribe Now</button>
+            <button class="md:px-6 md:py-2 bg-blue-500  text-white rounded-md hover:bg-blue-600 jost">Subscribe
+              Now</button>
           </div>
         </div>
       </div>
@@ -509,4 +518,5 @@
   </div>
 
 </body>
+
 </html>
