@@ -51,66 +51,65 @@
 <body class="outfit">
   <header class="bg-white shadow-md">
     <div class="container mx-auto">
-        <div class=" px-4 py-3 flex items-center justify-between">
-            <!-- Logo -->
-            <div class="flex lg:flex-1 md:ml-[150px]">
-                <a href="#" class="-m-1 p-1">
-                    <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
-                </a>
-            </div>
-
-            <!-- Desktop Menu -->
-            <nav class="hidden md:flex space-x-6 md:mr-[300px]">
-                <a href="../index.html" class="text-gray-700 hover:text-blue-500">Home</a>
-                <a href="./about.html" class="text-gray-700 hover:text-blue-500">About Us</a>
-                <a href="./sevices.html" class="text-gray-700 hover:text-blue-500">Services</a>
-                <a href="./blog.html" class="text-gray-700 hover:text-blue-500">Blog</a>
-                <a href="./gallery.html" class="text-gray-700 hover:text-blue-500">Gallery</a>
-                <a href="#" class="block text-gray-700 hover:text-blue-500">Videos</a>
-                <a href="./contact.html" class="text-gray-700 hover:text-blue-500">Contact Us</a>
-            </nav>
-
-            <!-- Call to Action Button -->
-            <div class="md:flex hidden">
-                <a href="#"
-                    class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 jost">Book
-                    Appointment</a>
-            </div>
-
-            <!-- Mobile Menu Toggle Button -->
-            <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
-                <!-- Hamburger Icon -->
-                <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-                <!-- Close Icon -->
-                <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
+      <div class=" px-4 py-3 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex lg:flex-1 md:ml-[0px]">
+          <a href="../index.html" class="-m-1 p-1">
+            <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
+          </a>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu"
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 md:mr-[300px]">
+          <a href="../index.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A] l">Home</a>
+          <a href="./about.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">About Us</a>
+          <a href="./sevices.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Services</a>
+          <a href="./blog.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Blog</a>
+          <a href="./gallery.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Gallery</a>
+          <a href="./video.html" class="block  hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Videos</a>
+          <a href="./contact.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Contact Us</a>
+        </nav>
+
+        <!-- Call to Action Button -->
+        <div class="md:flex hidden">
+          <a href="#"
+            class="bg-blue-500 text-white text-[18px]  font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition jost">
+            Book Appointment <i class="fa-solid fa-chevron-right text-xs pl-[10px]"></i><i
+              class="fa-solid fa-chevron-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
+          <!-- Hamburger Icon -->
+          <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-1000"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+          <!-- Close Icon -->
+          <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu"
         class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
         <nav class="space-y-2 py-4 px-4 text-center">
           <a href="#" class="block text-gray-700 hover:text-blue-500 py-[5px]">Home</a>
-          <a href="./about.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">About Us</a>
-          <a href="./sevices.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Services</a>
-          <a href="./blog.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Blog</a>
-          <a href="./gallery.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Gallery</a>
-          <a href="./contact.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Contact Us</a>
-          <a href="#" class="block text-gray-700 hover:text-blue-500 py-[5px]">Videos</a>
+          <a href="./pages/about.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">About Us</a>
+          <a href="./pages/sevices.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Services</a>
+          <a href="./pages/blog.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Blog</a>
+          <a href="./pages/gallery.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Gallery</a>
+          <a href="./pages/contact.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Contact Us</a>
+          <a href="./pages/video.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Videos</a>
         </nav>
       </div>
     </div>
-</header>
+  </header>
 
     <section class="bg-[#B2D6E9] relative md:h-[550px]  h-[250px]">
       <div>
@@ -230,8 +229,8 @@
         <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
           <!-- Text Content -->
           <div class="lg:w-1/2 text-center lg:text-left mb-6 lg:mb-0">
-            <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost jost">Still confused about your career choice? consult with our experts</h3>
-            <a href="#" class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition jost">
+            <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost jost md:w-[85%]">Still confused about your career choice? consult with our experts</h3>
+            <a href="./contact.html" class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition jost">
               Get In Touch <i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
               class="fa-solid fa-chevron-right text-xs"></i>
             </a>
