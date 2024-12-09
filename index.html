@@ -14,6 +14,19 @@
       padding: 0;
       box-sizing: border-box;
     }
+    header.transition{
+      transition: all 5s ease-in-out;
+    }
+
+    header.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: white;
+      transition: all 5s ease-in-out;
+    }
   </style>
   <script>
     tailwind.config = {
@@ -50,7 +63,7 @@
 
 <body class="outfit">
   <!-- header  -->
-  <header class="bg-white shadow-md">
+  <header class="bg-white shadow-md ">
     <div class="container mx-auto">
       <div class=" px-4 py-3 flex items-center justify-between">
         <!-- Logo -->
@@ -62,7 +75,7 @@
 
         <!-- Desktop Menu -->
         <nav class="hidden md:flex space-x-6 md:mr-[300px]">
-          <a href="#" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A] l">Home</a>
+          <a href="index.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A] l">Home</a>
           <a href="./pages/about.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">About Us</a>
           <a href="./pages/sevices.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Services</a>
           <a href="./pages/blog.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Blog</a>
@@ -73,7 +86,7 @@
 
         <!-- Call to Action Button -->
         <div class="md:flex hidden">
-          <a href="#"
+          <a href="./pages/contact.html"
             class="bg-blue-500 text-white text-[18px]  font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition jost">
             Book Appointment <i class="fa-solid fa-chevron-right text-xs pl-[10px]"></i><i
               class="fa-solid fa-chevron-right text-xs"></i>
@@ -100,7 +113,7 @@
       <div id="mobile-menu"
         class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
         <nav class="space-y-2 py-4 px-4 text-center">
-          <a href="#" class="block text-gray-700 hover:text-blue-500 py-[5px]">Home</a>
+          <a href="index.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Home</a>
           <a href="./pages/about.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">About Us</a>
           <a href="./pages/sevices.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Services</a>
           <a href="./pages/blog.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Blog</a>
@@ -182,7 +195,7 @@
                 </a>
               </div>
             </div>
-           
+
             <div class="grid gap-6 mt-8 md:grid-cols-3">
               <!-- Gynaecology Card -->
               <div
@@ -366,7 +379,7 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="relative shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
+          <div class="relative md:block hidden shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
             <img src="../imgs/home/section2-2.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
             <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
               <h4 class="text-lg font-semibold jost mb-[10px]">Dr.Makenna Dias</h4>
@@ -387,7 +400,7 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="relative shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
+          <div class="relative md:block hidden shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
             <img src="../imgs/home/section2-3.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
             <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
               <h4 class="text-lg font-semibold jost mb-[10px]">DR. Laura Dixon</h4>
@@ -408,7 +421,7 @@
             </div>
           </div>
           <!-- Card 4 -->
-          <div class="relative shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
+          <div class="relative md:block hidden shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
             <img src="../imgs/home/section2-4.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
             <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
               <h4 class="text-lg font-semibold jost mb-[10px]">Dr.Makenna Dias</h4>
@@ -450,17 +463,18 @@
         </div>
 
         <!-- Gallery Grid -->
-        <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <!-- Image 1 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:h-[350px] md:ml-[25px]">
-            <img src="../imgs/home/gallery1.png" alt="Gallery Image 1" class="md:w-[300px] md:h-full object-cover">
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:h-[350px] md:ml-[25px] h-[200px]">
+            <img src="../imgs/home/gallery1.png" alt="Gallery Image 1"
+              class="md:w-[300px] md:h-full h-full object-cover">
           </div>
           <!-- Image 2 -->
           <div class="rounded-lg overflow-hidden shadow-md md:w-[370px]  md:mr-[35px]">
             <img src="../imgs/home/gallery2.png" alt="Gallery Image 1" class="md:w-[390px] h-full object-cover">
           </div>
           <!-- Image 3 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[280px] md:ml-[35px]">
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[30 0px] md:ml-[35px] md:h-full h-[200px]">
             <img src="../imgs/home/gallery3.png" alt="Gallery Image 1" class="md:w-[350px] h-full object-cover">
           </div>
           <!-- Image 4 -->
@@ -468,19 +482,19 @@
             <img src="../imgs/home/gallery4.png" alt="Gallery Image 1" class="w-full h-full object-cover">
           </div>
           <!-- Image 5 -->
-          <div class="rounded-lg overflow-hidden md:ml-[20px] shadow-md md:w-[360px] md:h-[350px]">
+          <div class="rounded-lg overflow-hidden md:ml-[20px] shadow-md md:w-[360px] md:h-[350px] md:block hidden">
             <img src="../imgs/home/gallery5.png" alt="Gallery Image 1" class="w-full h-[350px] object-cover object-top">
           </div>
           <!-- Image 6 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:h-[350px] md:ml-[55px]">
+          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:h-[350px] md:ml-[55px] md:block hidden">
             <img src="../imgs/home/gallery6.png" alt="Gallery Image 1" class="w-full h-full object-cover">
           </div>
           <!-- Image 7 -->
-          <div class="rounded-lg overflow-hidden md:ml-[25px] shadow-md md:w-[350px] md:h-[350px]">
+          <div class="rounded-lg overflow-hidden md:ml-[25px] shadow-md md:w-[350px] md:h-[350px] h-[200px]">
             <img src="../imgs/home/gallery7.png" alt="Gallery Image 1" class="w-full h-full object-cover">
           </div>
           <!-- Image 8 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:h-[350px] md:w-[300px] md:ml-[45px]">
+          <div class="rounded-lg overflow-hidden shadow-md md:h-[350px] md:w-[300px] md:ml-[45px] h-[200px]">
             <img src="../imgs/home/gallery8.png" alt="Gallery Image 1" class="w-full h-full object-cover">
           </div>
         </div>
@@ -727,7 +741,8 @@
           <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
             <!-- Text Content -->
             <div class="lg:w-1/2 text-center lg:text-left mb-6 md:ml-[100px] lg:mb-0">
-              <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost md:w-[85%] w-full">Still confused about your career
+              <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost md:w-[85%] w-full">Still confused about your
+                career
                 choice? consult with our experts</h3>
               <a href="./pages/contact.html"
                 class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition jost">
@@ -754,14 +769,16 @@
     <footer class="bg-[#1F1F1F] text-white py-8 mt-[80px] md:mt-[150px] relative">
       <!-- Subscription Box -->
       <div
-        class=" bg-white shadow-lg md:px-4 md:py-4  py-2 px-2 rounded-[10px] md:w-[900px] absolute md:-top-[50px] md:left-[360px] -top-[5%] left-[7%]">
+        class="bg-white shadow-lg md:px-2 md:py-4  py-2 px-2 rounded-[10px] md:w-[1300px] absolute md:-top-[50px] md:left-[16%] md:right-[0%] left-0 right-[2%] -top-[5%] left-[2%]">
         <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-          <h3 class="font-semibold md:text-2xl text-lg text-black jost">Subscribe for the exclusive updates!</h3>
+          <h3 class="font-semibold md:text-[38px] text-[22px]  text-black jost">Subscribe for the exclusive updates!
+          </h3>
           <div class="flex space-x-2">
             <input type="email" placeholder="Enter Your Email Address"
               class="px-4 py-2 md:w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
             <button
-              class="md:px-6 md:py-2 bg-blue-500 md:text-[20px] text-[15px] text-white rounded-md hover:bg-blue-600 jost">Subscribe</button>
+              class="block md:px-4 md:py-2 px-2 py-2 bg-blue-500 md:text-[20px] text-[15px] md:w-[300px] text-white rounded-md hover:bg-blue-600 jost">Subscribe
+              Now</button>
           </div>
         </div>
       </div>
@@ -778,61 +795,75 @@
                 Ipsum has been the industry's standard dummy text ever since the..</p>
             </div>
             <div class="flex flex-wrap space-x-4">
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-facebook-f py-[8px] px-[11px]"></i></a>
               </div>
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-instagram py-[7px] px-[8px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-instagram py-[7px] px-[9px]"></i></a>
               </div>
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[22px]"><i
+                    class="fa-brands fa-whatsapp py-[6px] px-[8px]"></i></a>
               </div>
             </div>
           </div>
 
           <!-- Links -->
-          <div class="flex flex-col space-y-4 md:px-[40px]">
-            <h3 class="font-semibold">Pages</h3>
-            <a href="#" class="text-gray-400 text-[14px]">Home</a>
-            <a href="#" class="text-gray-400 text-[14px]">About Us</a>
-            <a href="#" class="text-gray-400 text-[14px]">Services</a>
-            <a href="#" class="text-gray-400 text-[14px]">Gallery</a>
-            <a href="#" class="text-gray-400 text-[14px]">Contact Us</a>
+          <div class="flex md:space-x-0 md:pt-[0px] md:pb-[0px] space-x-16 pt-[20px] pb-[20px]">
+            <div class="flex flex-col space-y-4 md:px-[40px] ">
+              <h3 class="font-semibold text-[24px]">Pages</h3>
+              <a href="index.html" class="text-gray-400 text-[16px]">Home</a>
+              <a href="./pages/about.html" class="text-gray-400 text-[16px]">About Us</a>
+              <a href="./pages/sevices.html" class="text-gray-400 text-[16px]">Services</a>
+              <a href="./pages/gallery.html" class="text-gray-400 text-[16px]">Gallery</a>
+              <a href="./pages/contact.html" class="text-gray-400 text-[16px]">Contact Us</a>
+            </div>
+            <div class="flex flex-col space-y-4 md:text-center md:text-left md:px-[40px] md:hidden block">
+              <h3 class="font-semibold text-[24px]">Support</h3>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">Privacy Policy</a>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">Terms & Condition</a>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">FAQs</a>
+            </div>
           </div>
 
           <!-- Support -->
-          <div class="flex flex-col space-y-4 text-center md:text-left md:px-[40px]">
-            <h3 class="font-semibold">Support</h3>
-            <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-            <a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a>
-            <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+          <div class="md:flex md:flex-col md:space-y-4 text-center md:text-left md:px-[40px] md:block hidden">
+            <h3 class="font-semibold text-[24px]">Support</h3>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">Privacy Policy</a>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">Terms & Condition</a>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">FAQs</a>
           </div>
 
           <!-- Contact -->
-          <div class="flex flex-col space-y-4 md:text-left text-center md:px-[40px]">
-            <h3 class="font-semibold">Contact</h3>
+          <div class="flex flex-col space-y-4 md:text-left  md:px-[40px]">
+            <h3 class="font-semibold text-[24px]">Contact</h3>
             <div class=" flex flex-wrap">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
               </div>
               <div class="w-[300px] pl-[15px]">
-                <p class="text-sm text-gray-400">
+                <p class="text-sm text-left text-gray-400">
                   404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
                   Surat, Gujarat 395009
                 </p>
               </div>
             </div>
             <div class="flex flex-wrap">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i class="fa-solid fa-phone 
+                  py-[8px] px-[8px]"></i></a>
               </div>
-              <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">+91-999999999</p>
+              <p class="text-lg text-gray-400 pl-[15px] pt-[0px]">+91-9998949339</p>
             </div>
             <div class="flex flex-wrap pt-[10px]">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
               </div>
-              <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">dr.ankur@gmail.com</p>
+              <p class="text-lg text-gray-400 pl-[15px] pt-[0px]">dr.ankurgandhi@gmail.com</p>
             </div>
           </div>
         </div>
@@ -848,6 +879,23 @@
       </div>
     </footer>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('header').addClass("sticky");
+        $('header').addClass("transition-transform");
+        $('header').addClass("duration-[100000ms]");
+      }
+      else {
+        $('header').removeClass("sticky");
+        $('header').removeClass("transition-transform");
+        $('header').removeClass("duration-[100000ms]");
+      }
+    })
+  </script>
 </body>
 
 </html>

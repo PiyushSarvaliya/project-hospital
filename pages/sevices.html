@@ -14,6 +14,15 @@
       padding: 0;
       box-sizing: border-box;
     }
+
+    header.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: white;
+    }
   </style>
   <script>
     tailwind.config = {
@@ -53,7 +62,7 @@
     <div class="container mx-auto">
       <div class=" px-4 py-3 flex items-center justify-between">
         <!-- Logo -->
-        <div class="flex lg:flex-1 md:ml-[150px]">
+        <div class="flex lg:flex-1 md:ml-[0px]">
           <a href="../index.html" class="-m-1 p-1">
             <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
           </a>
@@ -61,19 +70,23 @@
 
         <!-- Desktop Menu -->
         <nav class="hidden md:flex space-x-6 md:mr-[300px]">
-          <a href="../index.html" class="text-gray-700 hover:text-blue-500">Home</a>
-          <a href="./about.html" class="text-gray-700 hover:text-blue-500">About Us</a>
-          <a href="#" class="text-gray-700 hover:text-blue-500">Services</a>
-          <a href="./blog.html" class="text-gray-700 hover:text-blue-500">Blog</a>
-          <a href="./gallery.html" class="text-gray-700 hover:text-blue-500">Gallery</a>
-          <a href="./video.html" class="block text-gray-700 hover:text-blue-500">Videos</a>
-          <a href="./contact.html" class="text-gray-700 hover:text-blue-500">Contact Us</a>
+          <a href="../index.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A] l">Home</a>
+          <a href="./about.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">About Us</a>
+          <a href="./sevices.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Services</a>
+          <a href="./blog.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Blog</a>
+          <a href="./gallery.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Gallery</a>
+          <a href="./video.html" class="block  hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Videos</a>
+          <a href="./contact.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Contact Us</a>
         </nav>
 
+        
         <!-- Call to Action Button -->
         <div class="md:flex hidden">
-          <a href="#" class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 jost">Book
-            Appointment</a>
+          <a href="./contact.html"
+            class="bg-blue-500 text-white text-[18px]  font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition jost">
+            Book Appointment <i class="fa-solid fa-chevron-right text-xs pl-[10px]"></i><i
+              class="fa-solid fa-chevron-right text-xs"></i>
+          </a>
         </div>
 
         <!-- Mobile Menu Toggle Button -->
@@ -98,7 +111,7 @@
         <nav class="space-y-2 py-4 px-4 text-center">
           <a href="../index.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Home</a>
           <a href="./about.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">About Us</a>
-          <a href="#" class="block text-gray-700 hover:text-blue-500 py-[5px]">Services</a>
+          <a href="./sevices.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Services</a>
           <a href="./blog.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Blog</a>
           <a href="./gallery.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Gallery</a>
           <a href="./contact.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Contact Us</a>
@@ -382,17 +395,22 @@
             <div class="text-blue-600 text-4xl mb-4">
               <div
                 class="w-[80px] h-[80px] border border-[1px] border-[#EA558F] rounded-[15px] group-hover:border-white ">
-                <svg class="m-[13px]" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="m-[13px]" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_249_1951)">
-                  <path class="group-hover:fill-[#FFF]" d="M14.9668 23.7598L18.3523 19.2456C20.3269 16.6124 24.3466 17.0251 25.7919 19.9168L28.8851 26.103L29.3254 25.5159C30.1501 24.4163 31.4632 23.7597 32.8378 23.7597H48.5546C55.8562 5.49053 33.5514 -4.55285 24.9999 10.3506C16.4512 -4.5508 -5.85629 5.48692 1.44525 23.7597H14.9668V23.7598ZM31.6476 37.055C29.6869 39.6691 25.6644 39.2977 24.208 36.3837L21.1148 30.1976L20.6745 30.7847C19.8498 31.8844 18.5367 32.541 17.1621 32.541H6.76482C8.31711 34.4088 10.1491 36.2857 12.2742 38.1628C18.2131 43.4088 24.0652 46.5538 24.3113 46.6851C24.5233 46.7981 24.7598 46.8573 25 46.8573C25.2402 46.8573 25.4767 46.7981 25.6887 46.6851C25.9348 46.5538 31.7869 43.4088 37.7257 38.1628C39.8508 36.2857 41.6829 34.4089 43.2352 32.541H35.0332L31.6476 37.055Z" fill="#EA558F"/>
-                  <path class="group-hover:fill-[#FFF]" d="M48.5135 26.6868H32.8376C32.6104 26.6868 32.3864 26.7397 32.1831 26.8414C31.9799 26.943 31.8032 27.0905 31.6668 27.2722L28.385 31.6481L23.1735 21.2255C22.6873 20.2529 21.3451 20.1333 20.6937 21.0019L16.4301 26.6868H1.48606C-0.455721 26.7642 -0.454258 29.5373 1.48606 29.6139H17.1619C17.3891 29.6139 17.6132 29.561 17.8164 29.4594C18.0196 29.3577 18.1964 29.2102 18.3327 29.0285L21.6146 24.6525L26.826 35.0751C27.315 36.0534 28.6573 36.1635 29.3058 35.2987L33.5694 29.6138H48.5135C50.4553 29.5366 50.4538 26.7635 48.5135 26.6868Z" fill="#EA558F"/>
+                    <path class="group-hover:fill-[#FFF]"
+                      d="M14.9668 23.7598L18.3523 19.2456C20.3269 16.6124 24.3466 17.0251 25.7919 19.9168L28.8851 26.103L29.3254 25.5159C30.1501 24.4163 31.4632 23.7597 32.8378 23.7597H48.5546C55.8562 5.49053 33.5514 -4.55285 24.9999 10.3506C16.4512 -4.5508 -5.85629 5.48692 1.44525 23.7597H14.9668V23.7598ZM31.6476 37.055C29.6869 39.6691 25.6644 39.2977 24.208 36.3837L21.1148 30.1976L20.6745 30.7847C19.8498 31.8844 18.5367 32.541 17.1621 32.541H6.76482C8.31711 34.4088 10.1491 36.2857 12.2742 38.1628C18.2131 43.4088 24.0652 46.5538 24.3113 46.6851C24.5233 46.7981 24.7598 46.8573 25 46.8573C25.2402 46.8573 25.4767 46.7981 25.6887 46.6851C25.9348 46.5538 31.7869 43.4088 37.7257 38.1628C39.8508 36.2857 41.6829 34.4089 43.2352 32.541H35.0332L31.6476 37.055Z"
+                      fill="#EA558F" />
+                    <path class="group-hover:fill-[#FFF]"
+                      d="M48.5135 26.6868H32.8376C32.6104 26.6868 32.3864 26.7397 32.1831 26.8414C31.9799 26.943 31.8032 27.0905 31.6668 27.2722L28.385 31.6481L23.1735 21.2255C22.6873 20.2529 21.3451 20.1333 20.6937 21.0019L16.4301 26.6868H1.48606C-0.455721 26.7642 -0.454258 29.5373 1.48606 29.6139H17.1619C17.3891 29.6139 17.6132 29.561 17.8164 29.4594C18.0196 29.3577 18.1964 29.2102 18.3327 29.0285L21.6146 24.6525L26.826 35.0751C27.315 36.0534 28.6573 36.1635 29.3058 35.2987L33.5694 29.6138H48.5135C50.4553 29.5366 50.4538 26.7635 48.5135 26.6868Z"
+                      fill="#EA558F" />
                   </g>
                   <defs>
-                  <clipPath id="clip0_249_1951">
-                  <rect width="50" height="50" fill="white"/>
-                  </clipPath>
+                    <clipPath id="clip0_249_1951">
+                      <rect width="50" height="50" fill="white" />
+                    </clipPath>
                   </defs>
-                  </svg>
+                </svg>
               </div>
             </div>
             <h4 class="text-xl font-bold group-hover:text-[#FFF]">Precise Diagnosis</h4>
@@ -423,7 +441,8 @@
         <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
           <!-- Text Content -->
           <div class="lg:w-1/2 text-center lg:text-left mb-6 md:ml-[100px] lg:mb-0">
-            <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost w-[85%]">Still confused about your career choice? consult with our experts</h3>
+            <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost w-[85%]">Still confused about your career choice?
+              consult with our experts</h3>
             <a href="#"
               class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition jost">
               Get In Touch <i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
@@ -447,13 +466,15 @@
     <footer class="bg-[#1F1F1F] text-white py-8 mt-[80px] md:mt-[150px] relative">
       <!-- Subscription Box -->
       <div
-        class=" bg-white shadow-lg md:px-4 md:py-4  py-2 px-2 rounded-[10px] md:w-[900px] absolute md:-top-[50px] md:left-[360px] -top-[5%] left-[7%]">
+        class="bg-white shadow-lg md:px-2 md:py-4  py-2 px-2 rounded-[10px] md:w-[1300px] absolute md:-top-[50px] md:left-[16%] md:right-[0%] left-0 right-[2%] -top-[5%] left-[2%]">
         <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-          <h3 class="font-semibold md:text-2xl text-lg text-black jost">Subscribe for the exclusive updates!</h3>
+          <h3 class="font-semibold md:text-[38px] text-[22px]  text-black jost">Subscribe for the exclusive updates!
+          </h3>
           <div class="flex space-x-2">
             <input type="email" placeholder="Enter Your Email Address"
               class="px-4 py-2 md:w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
-            <button class="md:px-6 md:py-2 bg-blue-500  text-white rounded-md hover:bg-blue-600 jost">Subscribe
+            <button
+              class="block md:px-4 md:py-2 px-2 py-2 bg-blue-500 md:text-[20px] text-[15px] md:w-[300px] text-white rounded-md hover:bg-blue-600 jost">Subscribe
               Now</button>
           </div>
         </div>
@@ -471,61 +492,75 @@
                 Ipsum has been the industry's standard dummy text ever since the..</p>
             </div>
             <div class="flex flex-wrap space-x-4">
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-facebook-f py-[8px] px-[11px]"></i></a>
               </div>
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-instagram py-[7px] px-[8px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-instagram py-[7px] px-[9px]"></i></a>
               </div>
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[22px]"><i
+                    class="fa-brands fa-whatsapp py-[6px] px-[8px]"></i></a>
               </div>
             </div>
           </div>
 
           <!-- Links -->
-          <div class="flex flex-col space-y-4 md:px-[40px]">
-            <h3 class="font-semibold">Pages</h3>
-            <a href="#" class="text-gray-400 text-[14px]">Home</a>
-            <a href="#" class="text-gray-400 text-[14px]">About Us</a>
-            <a href="#" class="text-gray-400 text-[14px]">Services</a>
-            <a href="#" class="text-gray-400 text-[14px]">Gallery</a>
-            <a href="#" class="text-gray-400 text-[14px]">Contact Us</a>
+          <div class="flex md:space-x-0 md:pt-[0px] md:pb-[0px] space-x-16 pt-[20px] pb-[20px]">
+            <div class="flex flex-col space-y-4 md:px-[40px] ">
+              <h3 class="font-semibold text-[24px]">Pages</h3>
+              <a href="../index.html" class="text-gray-400 text-[16px]">Home</a>
+              <a href="./about.html" class="text-gray-400 text-[16px]">About Us</a>
+              <a href="./sevices.html" class="text-gray-400 text-[16px]">Services</a>
+              <a href="./gallery.html" class="text-gray-400 text-[16px]">Gallery</a>
+              <a href="./contact.html" class="text-gray-400 text-[16px]">Contact Us</a>
+            </div>
+            <div class="flex flex-col space-y-4 md:text-center md:text-left md:px-[40px] md:hidden block">
+              <h3 class="font-semibold text-[24px]">Support</h3>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">Privacy Policy</a>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">Terms & Condition</a>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">FAQs</a>
+            </div>
           </div>
 
           <!-- Support -->
-          <div class="flex flex-col space-y-4 text-center md:text-left md:px-[40px]">
-            <h3 class="font-semibold">Support</h3>
-            <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-            <a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a>
-            <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+          <div class="md:flex md:flex-col md:space-y-4 text-center md:text-left md:px-[40px] md:block hidden">
+            <h3 class="font-semibold text-[24px]">Support</h3>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">Privacy Policy</a>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">Terms & Condition</a>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">FAQs</a>
           </div>
 
           <!-- Contact -->
-          <div class="flex flex-col space-y-4 md:text-left text-center md:px-[40px]">
-            <h3 class="font-semibold">Contact</h3>
+          <div class="flex flex-col space-y-4 md:text-left  md:px-[40px]">
+            <h3 class="font-semibold text-[24px]">Contact</h3>
             <div class=" flex flex-wrap">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
               </div>
               <div class="w-[300px] pl-[15px]">
-                <p class="text-sm text-gray-400">
+                <p class="text-sm text-left text-gray-400">
                   404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
                   Surat, Gujarat 395009
                 </p>
               </div>
             </div>
             <div class="flex flex-wrap">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i class="fa-solid fa-phone 
+                  py-[8px] px-[8px]"></i></a>
               </div>
-              <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">+91-999999999</p>
+              <p class="text-lg text-gray-400 pl-[15px] pt-[0px]">+91-9998949339</p>
             </div>
             <div class="flex flex-wrap pt-[10px]">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
               </div>
-              <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">dr.ankur@gmail.com</p>
+              <p class="text-lg text-gray-400 pl-[15px] pt-[0px]">dr.ankurgandhi@gmail.com</p>
             </div>
           </div>
         </div>
@@ -541,6 +576,20 @@
       </div>
     </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('header').addClass("sticky");
+        $('header').addClass("transition-transform");
+        $('header').addClass("duration-[50000ms]");
+      }
+      else {
+        $('header').removeClass("sticky");
+      }
+    })
+  </script>
 </body>
 
 </html>

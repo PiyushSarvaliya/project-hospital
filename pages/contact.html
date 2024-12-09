@@ -2,50 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                    },
-                    container: {
-                        center: true,
-                    },
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-                },
-                fontFamily: {
+    header.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: white;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+          },
+          container: {
+            center: true,
+          },
 
-                }
-            }
-        }
-        function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const toggleIconOpen = document.getElementById('menu-icon-open');
-            const toggleIconClose = document.getElementById('menu-icon-close');
+        },
+        fontFamily: {
 
-            menu.classList.toggle('hidden'); // Toggle visibility
-            menu.classList.toggle('max-h-0'); // For smooth opening/closing
-            menu.classList.toggle('max-h-screen'); // For smooth opening/closing
-            menu.classList.toggle('transition-transform');
-            menu.classList.toggle('duration-1000');
-            // Toggle icons
-            toggleIconOpen.classList.toggle('hidden');
-            toggleIconClose.classList.toggle('hidden');
         }
-    </script>
+      }
+    }
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const toggleIconOpen = document.getElementById('menu-icon-open');
+      const toggleIconClose = document.getElementById('menu-icon-close');
+
+      menu.classList.toggle('hidden'); // Toggle visibility
+      menu.classList.toggle('max-h-0'); // For smooth opening/closing
+      menu.classList.toggle('max-h-screen'); // For smooth opening/closing
+      menu.classList.toggle('transition-transform');
+      menu.classList.toggle('duration-1000');
+      // Toggle icons
+      toggleIconOpen.classList.toggle('hidden');
+      toggleIconClose.classList.toggle('hidden');
+    }
+  </script>
 </head>
 
 <body class="outfit">
@@ -72,7 +81,7 @@
 
         <!-- Call to Action Button -->
         <div class="md:flex hidden">
-          <a href="#"
+          <a href="./contact.html"
             class="bg-blue-500 text-white text-[18px]  font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition jost">
             Book Appointment <i class="fa-solid fa-chevron-right text-xs pl-[10px]"></i><i
               class="fa-solid fa-chevron-right text-xs"></i>
@@ -111,161 +120,170 @@
     </div>
   </header>
 
-    <section class="bg-[#B2D6E9] relative md:h-[550px]  h-[250px]">
-      <div>
-          <div class="container flex flex-col lg:flex-row items-center lg:items-start px-4 py-8 lg:px-16 lg:py-16 relative">
-              <!-- Left Section: Text -->
-              <div class="md:w-1/2   md:text-center lg:text-left md:mt-[180px] absolute  md:left-[200px] left-[15px] top-[100px]">
-                  <h3 class="text-pink-500 text-sm uppercase font-bold">Get In Touch With Us</h3>
-                  <h1 class="md:text-4xl text-[20px] uppercase font-bold text-gray-800 jost">Contact Us</h1>
-              </div>
-  
-              <!-- Right Section: Image -->
-              <div class="md:w-1/2  flex justify-center mt-8 md:-right-[30px] md:top-[40px] z-10 absolute top-[0px] right-[50px]">
-                  <img src="../imgs/blog/banner2.png" alt="" class="md:w-[400px] w-[170px]">
-              </div>
-          </div>
-          
-          <div class="absolute md:bottom-[0px] bottom-[0px]"><img src="../imgs/blog/secbannerbottom.png" alt="" srcset="" class="md:w-full w-[100px]"></div>
-      <div class="absolute top-0 left-0"><img src="../imgs/blog/Ellipse 1.png" alt="" srcset="" class="md:w-[450px] w-[100px]"></div>
-      <div class="absolute md:right-[500px] md:-top-[20px] top-[0px] right-[170px]"><img src="../imgs/blog/bannerrighttop.png" alt=""
-              srcset="" class="md:w-full w-[100px]"></div>
-      <div class="absolute md:top-[135px] md:right-[200px] right-0 bg-cover w-[40%] md:w-[20%] overflow-hidden"><img src="../imgs/blog/banner-png.png"
-              alt="" srcset="" class="md:w-[720px] "></div>
-
-      </div>
-  </section>
-
-    <section class="md:py-[50px] py-[20px] px-[20px] md:px-[0px] relative">
-        <div class="absolute opacity-10 right-0 -bottom-[5%] md:block hidden"><img src="../imgs/home/section1foot.png" alt="" srcset="" class="w-[150px]"></div>
-        <div class="container mx-auto py-10 px-5 bg-[#B2D6E91A] rounded-[15px] px-[35px]">
-            <!-- Grid Container -->
-            <div class="md:flex grid gap-8 ">
-
-                <!-- Left Content -->
-                <div class="md:w-3/5 w-full md:mb-[0px] mb-[20px]">
-                    <p class="text-pink-500 font-semibold text-lg">Get Support Anytime</p>
-                    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mt-2 py-2 jost">
-                        We’re Open For Any Women’s Of Queries
-                    </h1>
-                    <p class="text-gray-600 text-[20px] mt-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit magna ut dui commodo
-                        facilisis.
-                    </p>
-                    <div class="mt-6 space-y-4">
-                        <div class="flex items-start">
-                            <span class="text-pink-500 text-2xl mr-4">📍</span>
-                            <p class="text-gray-700">
-                                <span class="font-semibold">Our Office Address:</span><br>
-                                403, Shivlok Western, Above TGB Restaurant, Opposite Green Avenue LP, Adajan Road,
-                                Surat, Gujarat 395009
-                            </p>
-                        </div>
-                        <div class="flex items-start">
-                            <span class="text-pink-500 text-2xl mr-4">📧</span>
-                            <p class="text-gray-700">
-                                <span class="font-semibold">Our General Enquiries:</span><br>
-                                dr.anuragsheth@gmail.com
-                            </p>
-                        </div>
-                        <div class="flex items-start">
-                            <span class="text-pink-500 text-2xl mr-4">📞</span>
-                            <p class="text-gray-700">
-                                <span class="font-semibold">Call Us:</span><br>
-                                +91-90994 94755
-                            </p>
-                        </div>
-                        <div class="flex items-start">
-                            <span class="text-pink-500 text-2xl mr-4">🕒</span>
-                            <p class="text-gray-700">
-                                <span class="font-semibold">Our Timing:</span><br>
-                                Mon-Sun: 12:00 PM - 12:00 PM / 12:00 AM - 12:00 AM
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Form -->
-                <div class="md:px-[35px] md:w-2/5 w-full md:order-2 -order-1">
-                    <div class="bg-[#C3DFEE] p-6 rounded-lg shadow-lg">
-                        <h2 class="text-2xl font-bold text-gray-900 mb-4 jost">Get in Touch.</h2>
-                        <form class="space-y-4">
-                            <div>
-                                <label for="first-name" class="block text-sm font-medium text-gray-700">First
-                                    Name</label>
-                                <input type="text" id="first-name"
-                                    class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
-                            </div>
-                            <div>
-                                <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
-                                <input type="text" id="last-name"
-                                    class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
-                            </div>
-                            <div>
-                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
-                                <input type="text" id="phone"
-                                    class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                                <input type="email" id="email"
-                                    class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
-                            </div>
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                                <textarea id="message" rows="4"
-                                    class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500"></textarea>
-                            </div>
-                            <button type="submit"
-                                class="w-full bg-pink-500 text-white py-2 px-4 rounded-lg shadow hover:bg-pink-600 jost">
-                                Submit
-                            </button>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
+  <section class="bg-[#B2D6E9] relative md:h-[550px]  h-[250px]">
+    <div>
+      <div class="container flex flex-col lg:flex-row items-center lg:items-start px-4 py-8 lg:px-16 lg:py-16 relative">
+        <!-- Left Section: Text -->
+        <div
+          class="md:w-1/2   md:text-center lg:text-left md:mt-[180px] absolute  md:left-[200px] left-[15px] top-[100px]">
+          <h3 class="text-pink-500 text-sm uppercase font-bold">Get In Touch With Us</h3>
+          <h1 class="md:text-4xl text-[20px] uppercase font-bold text-gray-800 jost">Contact Us</h1>
         </div>
 
-    </section>
+        <!-- Right Section: Image -->
+        <div
+          class="md:w-1/2  flex justify-center mt-8 md:-right-[30px] md:top-[40px] z-10 absolute top-[0px] right-[50px]">
+          <img src="../imgs/blog/banner2.png" alt="" class="md:w-[400px] w-[170px]">
+        </div>
+      </div>
 
-    <div class="py-[30px]">
-      <div class="container">
-        <section class="pt-[10px] md:mx-[10px] bg-[#479CCA] text-white rounded-lg px-[30px] md:mt-[50px]">
-          <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
-            <!-- Text Content -->
-            <div class="lg:w-1/2 text-center lg:text-left mb-6 md:ml-[100px] lg:mb-0">
-              <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost md:w-[85%]">Still confused about your career choice? consult with our experts</h3>
-              <a href="./contact.html"
-                class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition jost">
-                Get In Touch <i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
-                  class="fa-solid fa-chevron-right text-xs"></i>
-              </a>
+      <div class="absolute md:bottom-[0px] bottom-[0px]"><img src="../imgs/blog/secbannerbottom.png" alt="" srcset=""
+          class="md:w-full w-[100px]"></div>
+      <div class="absolute top-0 left-0"><img src="../imgs/blog/Ellipse 1.png" alt="" srcset=""
+          class="md:w-[450px] w-[100px]"></div>
+      <div class="absolute md:right-[500px] md:-top-[20px] top-[0px] right-[170px]"><img
+          src="../imgs/blog/bannerrighttop.png" alt="" srcset="" class="md:w-full w-[100px]"></div>
+      <div class="absolute md:top-[135px] md:right-[200px] right-0 bg-cover w-[40%] md:w-[20%] overflow-hidden"><img
+          src="../imgs/blog/banner-png.png" alt="" srcset="" class="md:w-[720px] "></div>
+
+    </div>
+  </section>
+
+  <section class="md:py-[50px] py-[20px] px-[20px] md:px-[0px] relative">
+    <div class="absolute opacity-10 right-0 -bottom-[5%] md:block hidden"><img src="../imgs/home/section1foot.png"
+        alt="" srcset="" class="w-[150px]"></div>
+    <div class="container mx-auto py-10 px-5 bg-[#B2D6E91A] rounded-[15px] px-[35px]">
+      <!-- Grid Container -->
+      <div class="md:flex grid gap-8 ">
+
+        <!-- Left Content -->
+        <div class="md:w-3/5 w-full md:mb-[0px] mb-[20px]">
+          <p class="text-pink-500 font-semibold text-lg">Get Support Anytime</p>
+          <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mt-2 py-2 jost">
+            We’re Open For Any Women’s Of Queries
+          </h1>
+          <p class="text-gray-600 text-[20px] mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit magna ut dui commodo
+            facilisis.
+          </p>
+          <div class="mt-6 space-y-4">
+            <div class="flex items-start">
+              <span class="text-pink-500 text-2xl mr-4">📍</span>
+              <p class="text-gray-700">
+                <span class="font-semibold">Our Office Address:</span><br>
+                403, Shivlok Western, Above TGB Restaurant, Opposite Green Avenue LP, Adajan Road,
+                Surat, Gujarat 395009
+              </p>
             </div>
-            <!-- Image -->
-            <div class=" md:ml-[8px] relative">
-              <img src="../imgs/home/Ellipse 70.png" alt="" class="relative">
-              <div class="absolute md:-top-[20px] md:-left-[100px] top-[8.5%]  -left-[60px]">
-                <img src="../imgs/home/lastsec-img.png" alt="Doctor Consultation" class="md:w-[590px] w-[270px]">
-              </div>
+            <div class="flex items-start">
+              <span class="text-pink-500 text-2xl mr-4">📧</span>
+              <p class="text-gray-700">
+                <span class="font-semibold">Our General Enquiries:</span><br>
+                dr.anuragsheth@gmail.com
+              </p>
+            </div>
+            <div class="flex items-start">
+              <span class="text-pink-500 text-2xl mr-4">📞</span>
+              <p class="text-gray-700">
+                <span class="font-semibold">Call Us:</span><br>
+                +91-90994 94755
+              </p>
+            </div>
+            <div class="flex items-start">
+              <span class="text-pink-500 text-2xl mr-4">🕒</span>
+              <p class="text-gray-700">
+                <span class="font-semibold">Our Timing:</span><br>
+                Mon-Sun: 12:00 PM - 12:00 PM / 12:00 AM - 12:00 AM
+              </p>
             </div>
           </div>
-        </section>
+        </div>
+
+        <!-- Right Form -->
+        <div class="md:px-[35px] md:w-2/5 w-full md:order-2 -order-1">
+          <div class="bg-[#C3DFEE] p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 jost">Get in Touch.</h2>
+            <form class="space-y-4">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-gray-700">First
+                  Name</label>
+                <input type="text" id="first-name"
+                  class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                <input type="text" id="last-name"
+                  class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                <input type="text" id="phone"
+                  class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email"
+                  class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500">
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" rows="4"
+                  class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500"></textarea>
+              </div>
+              <button type="submit"
+                class="w-full bg-pink-500 text-white py-2 px-4 rounded-lg shadow hover:bg-pink-600 jost">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+
       </div>
     </div>
 
-   <!-- footer  -->
-   <div>
+  </section>
+
+  <div class="py-[30px]">
+    <div class="container">
+      <section class="pt-[10px] md:mx-[10px] bg-[#479CCA] text-white rounded-lg px-[30px] md:mt-[50px]">
+        <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
+          <!-- Text Content -->
+          <div class="lg:w-1/2 text-center lg:text-left mb-6 md:ml-[100px] lg:mb-0">
+            <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost md:w-[85%]">Still confused about your career
+              choice? consult with our experts</h3>
+            <a href="./contact.html"
+              class="bg-white text-[#479CCA] font-bold py-2 px-6 rounded-[5px] shadow-md hover:bg-gray-100 transition jost">
+              Get In Touch <i class="fa-solid fa-chevron-right text-xs ml-[10px]"></i><i
+                class="fa-solid fa-chevron-right text-xs"></i>
+            </a>
+          </div>
+          <!-- Image -->
+          <div class=" md:ml-[8px] relative">
+            <img src="../imgs/home/Ellipse 70.png" alt="" class="relative">
+            <div class="absolute md:-top-[20px] md:-left-[100px] top-[8.5%]  -left-[60px]">
+              <img src="../imgs/home/lastsec-img.png" alt="Doctor Consultation" class="md:w-[590px] w-[270px]">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- footer  -->
+  <div>
     <footer class="bg-[#1F1F1F] text-white py-8 mt-[80px] md:mt-[150px] relative">
       <!-- Subscription Box -->
       <div
-        class=" bg-white shadow-lg md:px-4 md:py-4  py-2 px-2 rounded-[10px] md:w-[900px] absolute md:-top-[50px] md:left-[360px] -top-[5%] left-[7%]">
+        class="bg-white shadow-lg md:px-2 md:py-4  py-2 px-2 rounded-[10px] md:w-[1300px] absolute md:-top-[50px] md:left-[16%] md:right-[0%] left-0 right-[2%] -top-[5%] left-[2%]">
         <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-          <h3 class="font-semibold md:text-2xl text-lg text-black jost">Subscribe for the exclusive updates!</h3>
+          <h3 class="font-semibold md:text-[38px] text-[22px]  text-black jost">Subscribe for the exclusive updates!
+          </h3>
           <div class="flex space-x-2">
             <input type="email" placeholder="Enter Your Email Address"
               class="px-4 py-2 md:w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
-            <button class="md:px-6 md:py-2 bg-blue-500  text-white rounded-md hover:bg-blue-600 jost">Subscribe Now</button>
+            <button
+              class="block md:px-4 md:py-2 px-2 py-2 bg-blue-500 md:text-[20px] text-[15px] md:w-[300px] text-white rounded-md hover:bg-blue-600 jost">Subscribe
+              Now</button>
           </div>
         </div>
       </div>
@@ -282,61 +300,75 @@
                 Ipsum has been the industry's standard dummy text ever since the..</p>
             </div>
             <div class="flex flex-wrap space-x-4">
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-facebook-f py-[8px] px-[11px]"></i></a>
               </div>
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-instagram py-[7px] px-[8px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-instagram py-[7px] px-[9px]"></i></a>
               </div>
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[22px]"><i
+                    class="fa-brands fa-whatsapp py-[6px] px-[8px]"></i></a>
               </div>
             </div>
           </div>
 
           <!-- Links -->
-          <div class="flex flex-col space-y-4 md:px-[40px]">
-            <h3 class="font-semibold">Pages</h3>
-            <a href="#" class="text-gray-400 text-[14px]">Home</a>
-            <a href="#" class="text-gray-400 text-[14px]">About Us</a>
-            <a href="#" class="text-gray-400 text-[14px]">Services</a>
-            <a href="#" class="text-gray-400 text-[14px]">Gallery</a>
-            <a href="#" class="text-gray-400 text-[14px]">Contact Us</a>
+          <div class="flex md:space-x-0 md:pt-[0px] md:pb-[0px] space-x-16 pt-[20px] pb-[20px]">
+            <div class="flex flex-col space-y-4 md:px-[40px] ">
+              <h3 class="font-semibold text-[24px]">Pages</h3>
+              <a href="../index.html" class="text-gray-400 text-[16px]">Home</a>
+              <a href="./about.html" class="text-gray-400 text-[16px]">About Us</a>
+              <a href="./sevices.html" class="text-gray-400 text-[16px]">Services</a>
+              <a href="./gallery.html" class="text-gray-400 text-[16px]">Gallery</a>
+              <a href="./contact.html" class="text-gray-400 text-[16px]">Contact Us</a>
+            </div>
+            <div class="flex flex-col space-y-4 md:text-center md:text-left md:px-[40px] md:hidden block">
+              <h3 class="font-semibold text-[24px]">Support</h3>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">Privacy Policy</a>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">Terms & Condition</a>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">FAQs</a>
+            </div>
           </div>
 
           <!-- Support -->
-          <div class="flex flex-col space-y-4 text-center md:text-left md:px-[40px]">
-            <h3 class="font-semibold">Support</h3>
-            <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-            <a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a>
-            <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+          <div class="md:flex md:flex-col md:space-y-4 text-center md:text-left md:px-[40px] md:block hidden">
+            <h3 class="font-semibold text-[24px]">Support</h3>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">Privacy Policy</a>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">Terms & Condition</a>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">FAQs</a>
           </div>
 
           <!-- Contact -->
-          <div class="flex flex-col space-y-4 md:text-left text-center md:px-[40px]">
-            <h3 class="font-semibold">Contact</h3>
+          <div class="flex flex-col space-y-4 md:text-left  md:px-[40px]">
+            <h3 class="font-semibold text-[24px]">Contact</h3>
             <div class=" flex flex-wrap">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
               </div>
               <div class="w-[300px] pl-[15px]">
-                <p class="text-sm text-gray-400">
+                <p class="text-sm text-left text-gray-400">
                   404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
                   Surat, Gujarat 395009
                 </p>
               </div>
             </div>
             <div class="flex flex-wrap">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i class="fa-solid fa-phone 
+                  py-[8px] px-[8px]"></i></a>
               </div>
-              <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">+91-999999999</p>
+              <p class="text-lg text-gray-400 pl-[15px] pt-[0px]">+91-9998949339</p>
             </div>
             <div class="flex flex-wrap pt-[10px]">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
               </div>
-              <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">dr.ankur@gmail.com</p>
+              <p class="text-lg text-gray-400 pl-[15px] pt-[0px]">dr.ankurgandhi@gmail.com</p>
             </div>
           </div>
         </div>
@@ -352,6 +384,20 @@
       </div>
     </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('header').addClass("sticky");
+        $('header').addClass("transition-transform");
+        $('header').addClass("duration-[50000ms]");
+      }
+      else {
+        $('header').removeClass("sticky");
+      }
+    })
+  </script>
 </body>
 
 </html>

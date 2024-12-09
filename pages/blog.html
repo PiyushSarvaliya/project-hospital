@@ -14,6 +14,15 @@
       padding: 0;
       box-sizing: border-box;
     }
+
+    header.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: white;
+    }
   </style>
   <script>
     tailwind.config = {
@@ -72,7 +81,7 @@
 
         <!-- Call to Action Button -->
         <div class="md:flex hidden">
-          <a href="#"
+          <a href="./contact.html"
             class="bg-blue-500 text-white text-[18px]  font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition jost">
             Book Appointment <i class="fa-solid fa-chevron-right text-xs pl-[10px]"></i><i
               class="fa-solid fa-chevron-right text-xs"></i>
@@ -422,13 +431,15 @@
     <footer class="bg-[#1F1F1F] text-white py-8 mt-[80px] md:mt-[150px] relative">
       <!-- Subscription Box -->
       <div
-        class=" bg-white shadow-lg md:px-4 md:py-4  py-2 px-2 rounded-[10px] md:w-[900px] absolute md:-top-[50px] md:left-[360px] -top-[5%] left-[7%]">
+        class="bg-white shadow-lg md:px-2 md:py-4  py-2 px-2 rounded-[10px] md:w-[1300px] absolute md:-top-[50px] md:left-[16%] md:right-[0%] left-0 right-[2%] -top-[5%] left-[2%]">
         <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-          <h3 class="font-semibold md:text-2xl text-lg text-black jost">Subscribe for the exclusive updates!</h3>
+          <h3 class="font-semibold md:text-[38px] text-[22px]  text-black jost">Subscribe for the exclusive updates!
+          </h3>
           <div class="flex space-x-2">
             <input type="email" placeholder="Enter Your Email Address"
               class="px-4 py-2 md:w-full max-w-md border text-black border-gray-400 rounded-md focus:outline-none" />
-            <button class="md:px-6 md:py-2 bg-blue-500  text-white rounded-md hover:bg-blue-600 jost">Subscribe
+            <button
+              class="block md:px-4 md:py-2 px-2 py-2 bg-blue-500 md:text-[20px] text-[15px] md:w-[300px] text-white rounded-md hover:bg-blue-600 jost">Subscribe
               Now</button>
           </div>
         </div>
@@ -446,61 +457,75 @@
                 Ipsum has been the industry's standard dummy text ever since the..</p>
             </div>
             <div class="flex flex-wrap space-x-4">
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-facebook-f py-[8px] px-[11px]"></i></a>
               </div>
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-instagram py-[7px] px-[8px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-instagram py-[7px] px-[9px]"></i></a>
               </div>
-              <div class="w-[30px] h-[30px] rounded-full bg-white">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white">
+                <a href="#" class="text-[#EA558F] text-[22px]"><i
+                    class="fa-brands fa-whatsapp py-[6px] px-[8px]"></i></a>
               </div>
             </div>
           </div>
 
           <!-- Links -->
-          <div class="flex flex-col space-y-4 md:px-[40px]">
-            <h3 class="font-semibold">Pages</h3>
-            <a href="#" class="text-gray-400 text-[14px]">Home</a>
-            <a href="#" class="text-gray-400 text-[14px]">About Us</a>
-            <a href="#" class="text-gray-400 text-[14px]">Services</a>
-            <a href="#" class="text-gray-400 text-[14px]">Gallery</a>
-            <a href="#" class="text-gray-400 text-[14px]">Contact Us</a>
+          <div class="flex md:space-x-0 md:pt-[0px] md:pb-[0px] space-x-16 pt-[20px] pb-[20px]">
+            <div class="flex flex-col space-y-4 md:px-[40px] ">
+              <h3 class="font-semibold text-[24px]">Pages</h3>
+              <a href="../index.html" class="text-gray-400 text-[16px]">Home</a>
+              <a href="./about.html" class="text-gray-400 text-[16px]">About Us</a>
+              <a href="./sevices.html" class="text-gray-400 text-[16px]">Services</a>
+              <a href="./gallery.html" class="text-gray-400 text-[16px]">Gallery</a>
+              <a href="./contact.html" class="text-gray-400 text-[16px]">Contact Us</a>
+            </div>
+            <div class="flex flex-col space-y-4 md:text-center md:text-left md:px-[40px] md:hidden block">
+              <h3 class="font-semibold text-[24px]">Support</h3>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">Privacy Policy</a>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">Terms & Condition</a>
+              <a href="#" class="text-gray-400 text-[16px] hover:text-white">FAQs</a>
+            </div>
           </div>
 
           <!-- Support -->
-          <div class="flex flex-col space-y-4 text-center md:text-left md:px-[40px]">
-            <h3 class="font-semibold">Support</h3>
-            <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-            <a href="#" class="text-gray-400 hover:text-white">Terms & Condition</a>
-            <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+          <div class="md:flex md:flex-col md:space-y-4 text-center md:text-left md:px-[40px] md:block hidden">
+            <h3 class="font-semibold text-[24px]">Support</h3>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">Privacy Policy</a>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">Terms & Condition</a>
+            <a href="#" class="text-gray-400 text-[16px] hover:text-white">FAQs</a>
           </div>
 
           <!-- Contact -->
-          <div class="flex flex-col space-y-4 md:text-left text-center md:px-[40px]">
-            <h3 class="font-semibold">Contact</h3>
+          <div class="flex flex-col space-y-4 md:text-left  md:px-[40px]">
+            <h3 class="font-semibold text-[24px]">Contact</h3>
             <div class=" flex flex-wrap">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
               </div>
               <div class="w-[300px] pl-[15px]">
-                <p class="text-sm text-gray-400">
+                <p class="text-sm text-left text-gray-400">
                   404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
                   Surat, Gujarat 395009
                 </p>
               </div>
             </div>
             <div class="flex flex-wrap">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i class="fa-solid fa-phone 
+                  py-[8px] px-[8px]"></i></a>
               </div>
-              <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">+91-999999999</p>
+              <p class="text-lg text-gray-400 pl-[15px] pt-[0px]">+91-9998949339</p>
             </div>
             <div class="flex flex-wrap pt-[10px]">
-              <div class="w-[30px] h-[30px] rounded-full bg-white ">
-                <a href="#" class="text-[#EA558F]"><i class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
+              <div class="w-[35px] h-[35px] rounded-full bg-white ">
+                <a href="#" class="text-[#EA558F] text-[20px]"><i
+                    class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
               </div>
-              <p class="text-sm text-gray-400 pl-[15px] pt-[5px]">dr.ankur@gmail.com</p>
+              <p class="text-lg text-gray-400 pl-[15px] pt-[0px]">dr.ankurgandhi@gmail.com</p>
             </div>
           </div>
         </div>
@@ -516,7 +541,20 @@
       </div>
     </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('header').addClass("sticky");
+        $('header').addClass("transition-transform");
+        $('header').addClass("duration-[50000ms]");
+      }
+      else {
+        $('header').removeClass("sticky");
+      }
+    })
+  </script>
 </body>
 
 </html>
