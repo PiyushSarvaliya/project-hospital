@@ -14,7 +14,8 @@
       padding: 0;
       box-sizing: border-box;
     }
-    header.transition{
+
+    header.transition {
       transition: all 5s ease-in-out;
     }
 
@@ -63,33 +64,34 @@
 
 <body class="outfit">
   <!-- header  -->
-  <header class="bg-white shadow-md ">
-    <div class="container mx-auto">
-      <div class=" px-4 py-3 flex items-center justify-between">
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto max-w-screen-xl">
+      <div class="px-4 py-3 flex items-center justify-between">
         <!-- Logo -->
-        <div class="flex lg:flex-1 md:ml-[0px]">
+        <div class="flex lg:flex-1 md:ml-0">
           <a href="index.html" class="-m-1 p-1">
-            <img class="h-20 w-auto" src="../imgs/home/logo.png" alt="">
+            <img class="h-16 lg:h-20 w-auto" src="../imgs/home/logo.png" alt="Logo">
           </a>
         </div>
 
         <!-- Desktop Menu -->
-        <nav class="hidden md:flex space-x-6 md:mr-[300px]">
-          <a href="index.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A] l">Home</a>
-          <a href="./pages/about.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">About Us</a>
-          <a href="./pages/sevices.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Services</a>
-          <a href="./pages/blog.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Blog</a>
-          <a href="./pages/gallery.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Gallery</a>
-          <a href="./pages/video.html" class="block  hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Videos</a>
-          <a href="./pages/contact.html" class=" hover:text-[#479CCA] text-[18px] text-[#7A7A7A]">Contact Us</a>
+        <nav class="hidden md:flex space-x-4 lg:space-x-6 md:mr-16 lg:mr-32">
+          <a href="index.html" class="hover:text-[#479CCA] text-sm lg:text-[18px] text-[#7A7A7A]">Home</a>
+          <a href="./pages/about.html" class="hover:text-[#479CCA] text-sm lg:text-[18px] text-[#7A7A7A]">About Us</a>
+          <a href="./pages/sevices.html" class="hover:text-[#479CCA] text-sm lg:text-[18px] text-[#7A7A7A]">Services</a>
+          <a href="./pages/blog.html" class="hover:text-[#479CCA] text-sm lg:text-[18px] text-[#7A7A7A]">Blog</a>
+          <a href="./pages/gallery.html" class="hover:text-[#479CCA] text-sm lg:text-[18px] text-[#7A7A7A]">Gallery</a>
+          <a href="./pages/video.html" class="hover:text-[#479CCA] text-sm lg:text-[18px] text-[#7A7A7A]">Videos</a>
+          <a href="./pages/contact.html" class="hover:text-[#479CCA] text-sm lg:text-[18px] text-[#7A7A7A]">Contact
+            Us</a>
         </nav>
 
         <!-- Call to Action Button -->
-        <div class="md:flex hidden">
+        <div class="hidden md:flex">
           <a href="./pages/contact.html"
-            class="bg-blue-500 text-white text-[18px]  font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition jost">
-            Book Appointment <i class="fa-solid fa-chevron-right text-xs pl-[10px]"></i><i
-              class="fa-solid fa-chevron-right text-xs"></i>
+            class="bg-blue-500 text-white text-sm lg:text-[18px] font-semibold py-2 lg:py-3 px-4 lg:px-6 rounded-lg shadow-lg hover:bg-blue-600 transition">
+            Book Appointment
+            <i class="fa-solid fa-chevron-right text-xs pl-2"></i>
           </a>
         </div>
 
@@ -111,7 +113,7 @@
 
       <!-- Mobile Menu -->
       <div id="mobile-menu"
-        class="hidden max-h-0 overflow-hidden transition-all duration-1000  md:hidden bg-gray-50 border-t border-gray-200">
+        class="hidden max-h-0 overflow-hidden transition-all duration-1000 md:hidden bg-gray-50 border-t border-gray-200">
         <nav class="space-y-2 py-4 px-4 text-center">
           <a href="index.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">Home</a>
           <a href="./pages/about.html" class="block text-gray-700 hover:text-blue-500 py-[5px]">About Us</a>
@@ -124,10 +126,11 @@
       </div>
     </div>
   </header>
+
   <!-- banner section -->
   <section class="bg-gradient-to-r from-[#ffe4e6] via-[#fef9c3] to-[#e0f2fe] md:h-[740px] py-12  px-6 relative">
-    <div class="absolute right-0 md:top-[250px] top-[250px] md:block hidden"><img src="../imgs/home/headerfoot.png"
-        alt="" srcset="" class="md:w-full w-[80px]"></div>
+    <div class="absolute right-0 2xl:top-[250px] xl:top-[200px] xl:right-[0%] top-[250px] md:block hidden"><img
+        src="../imgs/home/headerfoot.png" alt="" srcset="" class="md:w-full w-[80px] xl:w-[130px]"></div>
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Text Content -->
       <div class="text-center md:text-left md:mb-0 mb-[20px]">
@@ -148,13 +151,13 @@
         <div class="relative ml-0 w-[100px]">
           <!-- Main Image -->
           <div
-            class="w-[150px] h-[200px] ml-[160px] md:w-[400px]  md:h-[600px] md:rounded-[320px] rounded-[200px] mb-[150px] overflow-hidden  ">
+            class="w-[150px] h-[200px] xl:ml-[140px] ml-[160px] md:w-[400px]  md:h-[600px] md:rounded-[320px] rounded-[200px] mb-[150px] overflow-hidden  ">
             <img src="../imgs/home/baby mom.png" alt="Mother and baby"
               class="md:w-[400px] md:h-[600px]  w-[300px] h-[200px] object-cover object-right">
           </div>
           <!-- Overlay Small Images -->
           <div
-            class="absolute -bottom-[10px] left-[150px] md:-bottom-[50px] md:w-[190px] md:h-[250px] md:rounded-[250px] border-4 border-white overflow-hidden w-[80px] rounded-[100px] h-[100px]">
+            class="absolute -bottom-[10px] xl:left-[120px] left-[150px] md:-bottom-[50px] md:w-[190px] md:h-[250px] md:rounded-[250px] border-4 border-white overflow-hidden w-[80px] rounded-[100px] h-[100px]">
             <img src="../imgs/home/baby.png" alt="Newborn baby" class="md:w-[300px] md:h-[300px] w-[80px] h-[100px]">
           </div>
         </div>
@@ -181,7 +184,7 @@
               <div>
                 <h2 class="text-xl font-semibold text-[#EA558F]">Our Services</h2>
                 <h3 class="text-[50px] font-bold mt-2 jost">Explore Our Services</h3>
-                <p class="text-[20px] text-gray-600 mt-4 md:w-[850px]">
+                <p class="text-[20px] text-gray-600 mt-4 xl:w-[850px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit magna at dui commodo
                   facilisis.
                   Vestibulum viverra risus id diam hendrerit vehicula.
@@ -360,7 +363,8 @@
           <!-- Card 1 -->
           <div class="relative shadow-lg rounded-lg text-center">
             <img src="../imgs/home/section2-1.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
-            <div class="absolute bg-white py-4 px-3 rounded-[15px] -bottom-[50px] left-[80px]">
+            <div
+              class="absolute bg-white py-4 px-3 rounded-[15px] xl:-bottom-[12%] xl:left-[20%] -bottom-[50px] left-[80px]">
               <h4 class="text-lg font-semibold jost mb-[10px]">Dr. Bhavsar Sathiya</h4>
               <div class="flex justify-center gap-2 pt-[5]">
                 <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
@@ -381,7 +385,7 @@
           <!-- Card 2 -->
           <div class="relative md:block hidden shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
             <img src="../imgs/home/section2-2.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
-            <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
+            <div class="absolute bg-white p-6 rounded-[15px] xl:-bottom-[12%] xl:left-[15%] -bottom-[50px] left-[80px]">
               <h4 class="text-lg font-semibold jost mb-[10px]">Dr.Makenna Dias</h4>
               <div class="flex justify-center gap-2 pt-[5]">
                 <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
@@ -402,7 +406,7 @@
           <!-- Card 3 -->
           <div class="relative md:block hidden shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
             <img src="../imgs/home/section2-3.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
-            <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
+            <div class="absolute bg-white p-6 rounded-[15px] xl:-bottom-[12%] xl:left-[15%] -bottom-[50px] left-[80px]">
               <h4 class="text-lg font-semibold jost mb-[10px]">DR. Laura Dixon</h4>
               <div class="flex justify-center gap-2 pt-[5]">
                 <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
@@ -423,7 +427,7 @@
           <!-- Card 4 -->
           <div class="relative md:block hidden shadow-lg rounded-lg text-center md:mt-[0px] mt-[50px]">
             <img src="../imgs/home/section2-4.png" alt="Dr. Bhavsar Sathiya" class="w-full h-full object-cover">
-            <div class="absolute bg-white p-6 rounded-[15px] -bottom-[50px] left-[80px]">
+            <div class="absolute bg-white p-6 rounded-[15px] xl:-bottom-[12%] xl:left-[15%] -bottom-[50px] left-[80px]">
               <h4 class="text-lg font-semibold jost mb-[10px]">Dr.Makenna Dias</h4>
               <div class="flex justify-center gap-2 pt-[5]">
                 <div class="w-[30px] h-[30px] bg-[#479CCA] rounded-full hover:bg-[#EA558F] transition duration-1000">
@@ -448,12 +452,12 @@
 
   <!-- gallery section  -->
   <div class="bg-gray-50 relative">
-    <div class="absolute top-[190px] left-[20px] md:block hidden"><img src="../imgs/home/gallerytop.png" alt=""
-        srcset="" class="w-[140px]"></div>
+    <div class="absolute top-[190px] 2xl:left-[20px] md:block hidden"><img src="../imgs/home/gallerytop.png" alt=""
+        srcset="" class="2xl:w-[140px] xl:w-[110px]"></div>
     <div class="absolute bottom-[170px] right-[5px] md:block hidden"><img src="../imgs/home/gallerybottom.png" alt=""
-        srcset="" class="w-[125px]"></div>
-    <section class="py-12 ">
-      <div class="container mx-auto px-[20px] md:px-[70px]">
+        srcset="" class="2xl:w-[125px] xl:w-[100px]"></div>
+    <section class="py-12">
+      <div class="container mx-auto px-[20px] 2xl:px-[70px] xl:px-[40px]">
         <!-- Section Header -->
         <div class="text-center mb-8">
           <h2 class="text-xl font-bold text-pink-600">Our Gallery</h2>
@@ -465,36 +469,43 @@
         <!-- Gallery Grid -->
         <div class="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <!-- Image 1 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:h-[350px] md:ml-[25px] h-[200px]">
+          <div
+            class="rounded-lg overflow-hidden shadow-md 2xl:w-[300px] 2xl:h-[350px] 2xl:ml-[25px] xl:w-[280px] xl:h-[310px] h-[200px]">
             <img src="../imgs/home/gallery1.png" alt="Gallery Image 1"
-              class="md:w-[300px] md:h-full h-full object-cover">
+              class="2xl:w-[300px] xl:w-[280px] xl:h-full h-full object-cover">
           </div>
           <!-- Image 2 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[370px]  md:mr-[35px]">
-            <img src="../imgs/home/gallery2.png" alt="Gallery Image 1" class="md:w-[390px] h-full object-cover">
+          <div class="rounded-lg overflow-hidden shadow-md 2xl:w-[370px] xl:w-[320px]  md:mr-[35px]">
+            <img src="../imgs/home/gallery2.png" alt="Gallery Image 1" class="2xl:w-[390px] h-full object-cover">
           </div>
           <!-- Image 3 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[30 0px] md:ml-[35px] md:h-full h-[200px]">
-            <img src="../imgs/home/gallery3.png" alt="Gallery Image 1" class="md:w-[350px] h-full object-cover">
+          <div
+            class="rounded-lg overflow-hidden shadow-md 2xl:w-[300px] 2xl:ml-[35px] xl:h-full xl:w-[260px] xl:ml-[30px] h-[200px]">
+            <img src="../imgs/home/gallery3.png" alt="Gallery Image 1"
+              class="2xl:w-[350px] xl:w-[280px] h-full object-cover">
           </div>
           <!-- Image 4 -->
           <div class="rounded-lg overflow-hidden shadow-md">
             <img src="../imgs/home/gallery4.png" alt="Gallery Image 1" class="w-full h-full object-cover">
           </div>
           <!-- Image 5 -->
-          <div class="rounded-lg overflow-hidden md:ml-[20px] shadow-md md:w-[360px] md:h-[350px] md:block hidden">
+          <div
+            class="rounded-lg overflow-hidden 2xl:ml-[20px] shadow-md 2xl:w-[360px] 2xl:h-[350px] xl:w-[330px] xl:h-[350px] xl:block hidden">
             <img src="../imgs/home/gallery5.png" alt="Gallery Image 1" class="w-full h-[350px] object-cover object-top">
           </div>
           <!-- Image 6 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:w-[300px] md:h-[350px] md:ml-[55px] md:block hidden">
+          <div
+            class="rounded-lg overflow-hidden shadow-md 2xl:w-[300px] 2xl:h-[350px] 2xl:ml-[55px] xl:w-[280px] xl:ml-[40px] xl:block hidden">
             <img src="../imgs/home/gallery6.png" alt="Gallery Image 1" class="w-full h-full object-cover">
           </div>
           <!-- Image 7 -->
-          <div class="rounded-lg overflow-hidden md:ml-[25px] shadow-md md:w-[350px] md:h-[350px] h-[200px]">
+          <div
+            class="rounded-lg overflow-hidden 2xl:ml-[25px] shadow-md 2xl:w-[350px] 2xl:h-[350px] xl:w-[300px] xl:h-full xl:ml-[35px] h-[200px]">
             <img src="../imgs/home/gallery7.png" alt="Gallery Image 1" class="w-full h-full object-cover">
           </div>
           <!-- Image 8 -->
-          <div class="rounded-lg overflow-hidden shadow-md md:h-[350px] md:w-[300px] md:ml-[45px] h-[200px]">
+          <div
+            class="rounded-lg overflow-hidden shadow-md 2xl:h-[350px] 2xl:w-[300px] 2xl:ml-[45px] xl:ml-[45px] xl:h-full xl:w-[240px] h-[200px]">
             <img src="../imgs/home/gallery8.png" alt="Gallery Image 1" class="w-full h-full object-cover">
           </div>
         </div>
@@ -513,11 +524,11 @@
 
   <!-- health section  -->
   <div class="bg-[url(../imgs/home/healthbgimage.png)] bg-no-repeat bg-cover">
-    <div class="bg-[#64A8CECC] opacity-80 md:px-[180px] md:relative">
-      <div class="md:absolute md:left-[0px] md:top-[120px] md:block hidden"><img src="../imgs/home/videotop.png" alt=""
-          srcset=""></div>
-      <div class="md:absolute md:right-[20px] md:bottom-[150px] md:block hidden"><img src="../imgs/home/videobottom.png"
-          alt="" srcset=""></div>
+    <div class="bg-[#64A8CECC] opacity-80 2xl:px-[180px] xl:px-[120px] md:relative">
+      <div class="md:absolute xl:left-[0%] xl:top-[20%] md:left-[0px] md:top-[120px] md:block hidden"><img
+          src="../imgs/home/videotop.png" alt="" srcset=""></div>
+      <div class="md:absolute md:right-[20px] xl:right-[0%] xl:bottom-[15%] md:bottom-[150px] md:block hidden"><img
+          src="../imgs/home/videobottom.png" alt="" srcset=""></div>
       <section class="py-12">
         <div class="container mx-auto px-4 text-center">
           <!-- Section Header -->
@@ -528,13 +539,13 @@
           <div class=" grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center">
 
             <div class="flex flex-col gap-4 gap-y-[150px]">
-              <div class="hidden md:block">
+              <div class="hidden md:block xl:mt-[100px]">
                 <img src="../imgs/home/healyh1.png" alt=""
-                  class="md:h-[340px] md:w-[340px] rounded-lg shadow-lg object-cover object-top">
+                  class="2xl:h-[340px] 2xl:w-[340px] xl:w-[270px] xl:h-[270px] rounded-lg shadow-lg object-cover object-top">
               </div>
               <div class="hidden md:block">
                 <img src="../imgs/home/health2.png" alt=""
-                  class="md:h-[340px] md:w-[300px] rounded-lg shadow-lg object-cover object-center">
+                  class="2xl:h-[340px] 2xl:w-[300px] xl:h-[300px] xl:w-[250px] rounded-lg shadow-lg object-cover object-center">
               </div>
             </div>
 
@@ -560,11 +571,11 @@
             <div class="ml-[80px] flex flex-col gap-4 gap-y-[120px]">
               <div class="hidden md:block">
                 <img src="../imgs/home/health3.png" alt=""
-                  class="md:h-[280px] w-[340px] rounded-lg shadow-lg object-cover object-top">
+                  class="2xl:h-[280px] w-[340px] xl:h-[260px] rounded-lg shadow-lg object-cover object-top">
               </div>
               <div class="hidden md:block ml-[50px]">
                 <img src="../imgs/home/health4.png" alt=""
-                  class="md:h-[230px] w-[280px] rounded-lg shadow-lg object-cover object-center">
+                  class="2xl:h-[230px] w-[300px] xl:h-[200px] rounded-lg shadow-lg object-cover object-center">
               </div>
             </div>
           </div>
@@ -613,8 +624,8 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden md:h-[500px] hidden md:block">
-            <img src="../imgs/home/blog2.png" alt="Blog 2" class="w-full md:h-[320px] object-cover">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden 2xl:h-[500px] hidden md:block">
+            <img src="../imgs/home/blog2.png" alt="Blog 2" class="w-full 2xl:h-[320px]  object-cover">
             <div class="p-4">
               <div class="text-sm text-gray-500 flex justify-between items-center mb-2">
                 <span class="flex items-center">
@@ -693,9 +704,9 @@
         <!-- Testimonial Card -->
         <div
           class="bg-blue-50 rounded-lg md:px-6 px-2 md:py-[10px] grid md:grid-cols-2 grid-cols-1  md:mx-[45px] md:h-[300px] ">
-          <div class="relative pl-[80px]">
+          <div class="relative 2xl:pl-[80px] pl-[80px] xl:pl-[0px]">
             <div
-              class="md:w-[480px] md:h-[324px] w-[270px] h-[150px] border border-[3px] border-[#7A7A7A] rounded-[15px] md:block hidden absolute md:top-[30%] md:left-[130px] bottom-[0%] right-[0%] -z-[1]">
+              class=" xl:w-[460px] xl:h-[300px] xl:left-[13%] xl:-bottom-[45%] absolute 2xl:w-[480px] 2xl:h-[324px] w-[270px] h-[150px] border border-[3px] border-[#7A7A7A] rounded-[15px] md:block hidden  2xl:top-[30%] 2xl:left-[130px] bottom-[0%] right-[0%] -z-[1] xl:z-[1]">
             </div>
             <div
               class="md:absolute md:top-[40px] md:-ml-[0px] -ml-[75px] mr-[0px]  p-[10px] md:p-[25px] relative z-[2]">
@@ -740,8 +751,8 @@
         <section class="pt-[10px] md:mx-[10px] bg-[#479CCA] text-white rounded-lg px-[30px] md:mt-[50px]">
           <div class="mx-auto px-4 flex flex-col lg:flex-row items-center ">
             <!-- Text Content -->
-            <div class="lg:w-1/2 text-center lg:text-left mb-6 md:ml-[100px] lg:mb-0">
-              <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost md:w-[85%] w-full">Still confused about your
+            <div class="lg:w-1/2 xl:w-1/2 text-center lg:text-left mb-6 2xl:ml-[100px] xl:ml-[60px] lg:mb-0">
+              <h3 class="md:text-[50px] text-[25px] font-bold mb-4 jost 2xl:w-[85%] w-full">Still confused about your
                 career
                 choice? consult with our experts</h3>
               <a href="./pages/contact.html"
@@ -753,8 +764,10 @@
             <!-- Image -->
             <div class=" md:ml-[8px] relative">
               <img src="../imgs/home/Ellipse 70.png" alt="" class="relative">
-              <div class="absolute md:-top-[20px] md:-left-[100px] -top-[2.5%] -left-[60px]">
-                <img src="../imgs/home/lastsec-img.png" alt="Doctor Consultation" class="md:w-[590px] w-[270px]">
+              <div
+                class="absolute 2xl:-top-[20px] 2xl:-left-[100px] xl:-left-[18%] xl:bottom-[8%]  -top-[2.5%] -left-[60px]">
+                <img src="../imgs/home/lastsec-img.png" alt="Doctor Consultation"
+                  class="2xl:w-[590px] xl:w-[548px] w-[270px]">
               </div>
             </div>
           </div>
@@ -769,9 +782,10 @@
     <footer class="bg-[#1F1F1F] text-white py-8 mt-[80px] md:mt-[150px] relative">
       <!-- Subscription Box -->
       <div
-        class="bg-white shadow-lg md:px-2 md:py-4  py-2 px-2 rounded-[10px] md:w-[1300px] absolute md:-top-[50px] md:left-[16%] md:right-[0%] left-0 right-[2%] -top-[5%] left-[2%]">
+        class="bg-white shadow-lg md:px-2 md:py-4  py-2 px-2 rounded-[10px] xl:w-[1150px] xl:left-[5%] 2xl:w-[1300px] absolute 2xl:-top-[50px] 2xl:left-[16%] 2xl:right-[0%] left-0 right-[2%] -top-[5%] left-[2%]">
         <div class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
-          <h3 class="font-semibold md:text-[38px] text-[22px]  text-black jost">Subscribe for the exclusive updates!
+          <h3 class="font-semibold 2xl:text-[38px] xl:text-[35px] text-[22px]  text-black jost">Subscribe for the
+            exclusive updates!
           </h3>
           <div class="flex space-x-2">
             <input type="email" placeholder="Enter Your Email Address"
@@ -837,14 +851,14 @@
           </div>
 
           <!-- Contact -->
-          <div class="flex flex-col space-y-4 md:text-left  md:px-[40px]">
+          <div class="flex flex-col xl:space-y-4 md:text-left  2xl:px-[40px] xl:px-[0px]">
             <h3 class="font-semibold text-[24px]">Contact</h3>
             <div class=" flex flex-wrap">
               <div class="w-[35px] h-[35px] rounded-full bg-white ">
                 <a href="#" class="text-[#EA558F] text-[20px]"><i
                     class="fa-brands fa-facebook-f py-[8px] px-[10px]"></i></a>
               </div>
-              <div class="w-[300px] pl-[15px]">
+              <div class="w-[300px] xl:w-[180px] pl-[15px]">
                 <p class="text-sm text-left text-gray-400">
                   404, Shivlok Western Above TGB Restaurant, Opposite Green Avenue, Poonam Road, Adajan Road,
                   Surat, Gujarat 395009
@@ -858,12 +872,12 @@
               </div>
               <p class="text-lg text-gray-400 pl-[15px] pt-[0px]">+91-9998949339</p>
             </div>
-            <div class="flex flex-wrap pt-[10px]">
+            <div class="flex 2xl:flex-wrap pt-[10px]">
               <div class="w-[35px] h-[35px] rounded-full bg-white ">
                 <a href="#" class="text-[#EA558F] text-[20px]"><i
                     class="fa-regular fa-envelope py-[8px] px-[6px]"></i></a>
               </div>
-              <p class="text-lg text-gray-400 pl-[15px] pt-[0px]">dr.ankurgandhi@gmail.com</p>
+              <p class="text-lg text-gray-400  pl-[15px] pt-[0px]">dr.ankurgandhi@gmail.com</p>
             </div>
           </div>
         </div>
